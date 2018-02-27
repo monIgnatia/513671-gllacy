@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [монахиня Игнатия Лошкарёва](https://up.htmlacademy.ru/htmlcss/20/user/513671).
-* Наставник: `Неизвестно`.
+* Наставник: [Александр Кошара](https://htmlacademy.ru/profile/rednaxxxela).
 
 ---
 
