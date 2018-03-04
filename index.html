@@ -31,6 +31,20 @@
         С 10 до 20, ежедневно<br>
         <span><a href="tel:8 812 450-25-25">8 812 450-25-25</a></span>
       </div>
+
+    <form class="forms" action="index.html" method="get">
+      <input type="search" name="search" value="Что ищем?">
+    </form>
+
+    <form class="forms" action="index.html" method="post">
+      <input type="email" name="e-mail" value="Электронная почта"><br>
+      <input type="password" name="password" value="Пароль"><br>
+      <button class="btn" type="button" name="login-in">Войти</button>
+      <div class="login-in-link">
+        <a href="#">Забыли пароль?</a>
+        <a href="#">Новая регистрация</a>
+      </div>
+    </form>
     </header>
 
     <main>
@@ -58,10 +72,10 @@
           <img src="img/hit.png" alt="Отметка 'хит'">
           <figure>
             <img src="img/ice-cream-1.png" alt="Сливочное мороженое">
+            <figcaption>
+              Сливочное с апельсиновым джемом и цитрусовой стружкой
+            </figcaption>
           </figure>
-          <figcaption>
-            Сливочное с апельсиновым джемом и цитрусовой стружкой
-          </figcaption>
           <p>310&#8381;<span>/кг</span></p>
         </div>
 
@@ -69,10 +83,10 @@
           <img src="img/hit.png" alt="Отметка 'хит'">
           <figure>
             <img src="img/ice-cream-2.png" alt="Сливочное-кофейное мороженое">
+            <figcaption>
+              Сливочно-кофейное с кусочками шоколада
+            </figcaption>
           </figure>
-          <figcaption>
-            Сливочно-кофейное с кусочками шоколада
-          </figcaption>
           <p>380&#8381;<span>/кг</span></p>
         </div>
 
@@ -80,10 +94,10 @@
           <img src="img/hit.png" alt="Отметка 'хит'">
           <figure>
             <img src="img/ice-cream-3.png" alt="Сливочное-клубничное мороженое">
+            <figcaption>
+              Сливочно-клубничное с присыпкой из белого шоколада
+            </figcaption>
           </figure>
-          <figcaption>
-            Сливочно-клубничное с присыпкой из белого шоколада
-          </figcaption>
           <p>355&#8381;<span>/кг</span></p>
         </div>
 
@@ -91,10 +105,10 @@
           <img src="img/hit.png" alt="Отметка 'хит'">
           <figure>
             <img src="img/ice-cream-4.png" alt="Сливочное крем-брюле">
+            <figcaption>
+              Сливочное крем-брюле с карамельной подливкой
+            </figcaption>
           </figure>
-          <figcaption>
-            Сливочное крем-брюле с карамельной подливкой
-          </figcaption>
           <p>415&#8381;<span>/кг</span></p>
         </div>
       </section>
@@ -104,7 +118,7 @@
           Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес
         </h3>
         <p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
-        <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья. </p>
+        <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
         <p>Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
         <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
       </section>
@@ -119,8 +133,10 @@
         <p>
           Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
         </p>
-        <input type="email" name="e-mail" value="Электронная почта">
-        <input class="btn" type="submit" name="submit" value="Отправить">
+        <form class="" action="index.html" method="post">
+          <input type="email" name="e-mail" value="Электронная почта"><br>
+          <input class="btn" type="submit" name="submit" value="Отправить">
+        </form>
       </section>
 
       <section class="location">
@@ -133,10 +149,16 @@
           <p><span>8 812 450-25-25</span></p>
           <p>(с 10 до 20 ежедневно)</p>
         </div>
-        <div class="btn">
-          <a href="">Форма обратной связи</a>
-        </div>
+        <button class="btn" type="button" name="button-feedback">Форма обратной связи</button>
       </section>
+
+      <form class="forms" name="form-feedback" action="index.html" method="post">
+        <p>Мы обязательно вам ответим!</p>
+        <input type="text" name="name" value="Как Вас зовут?"><br>
+        <input type="email" name="e-mail" value="Ваша почта для ответа?"><br>
+        <textarea name="textbox" rows="8" cols="80"></textarea><br>
+        <input class="btn" type="submit" name="submit" value="Отправить">
+      </form>
     </main>
 
     <footer>
@@ -159,7 +181,7 @@
       </nav>
 
       <section class="copyright">
-        <span>html academy</span>
+        <p><span>html academy</span></p>
         <p>Сделано в HTML Academy © 2017</p>
       </section>
     </footer>
