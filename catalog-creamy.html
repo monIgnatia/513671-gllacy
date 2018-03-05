@@ -73,34 +73,34 @@
 
     <main>
       <ul class="breadcrumbs">
-       <li><a href="#">Главная</a></li>
+       <li><a href="index.html">Главная</a></li>
        <li><a href="#">Каталог</a></li>
        <li><a href="#">Сливочное</a></li>
      </ul>
 
       <h1>Сливочное мороженое</h1>
       <form class="catalog-filter" action="#" method="post">
-        <label for="sort">Сортировка:</label>
+        <p>Сортировка:</p>
         <select name="sort" id="sort">
           <option value="popular" selected>по популярности</option>
           <option value="low-cost-first">сначала недорогие</option>
           <option value="high-cost-first">сначала дорогие</option>
           <option value="fatness">по жирности</option>
         </select>
-        <label for="price">Цена: 100 руб. – 500 руб.</label>
+        <p>Цена: 100 руб. – 500 руб.</p>
         <input type="range" name="price" id="price" min="100" max="500" step="5" value="250">
-        <label>Жирность:</label>
-          <input type="radio" name="fatness" value="0%">0%
-          <input type="radio" name="fatness" value="<10%" checked>до 10%
-          <input type="radio" name="fatness" value="<30%">до 30%
-          <input type="radio" name="fatness" value=">30%">выше 30%
+        <p>Жирность:</p>
+          <label><input type="radio" name="fatness" value="0%"><span>0%</span></label>
+          <label><input type="radio" name="fatness" value="<10%" checked><span>до 10%</span></label>
+          <label><input type="radio" name="fatness" value=">10%"><span>до 30%</span></label>
+          <label><input type="radio" name="fatness" value=">30%"><span>выше 30%</span></label>
           <br>
-        <label>Наполнители:</label>
-        <input type="checkbox" name="stuffing" value="chocolate" checked>шоколадные
-        <input type="checkbox" name="stuffing" value="sugar" checked>сахарные присыпки
-        <input type="checkbox" name="stuffing" value="fruit">фрукты
-        <input type="checkbox" name="stuffing" value="syrups">сиропы
-        <input type="checkbox" name="stuffing" value="jams">джемы
+        <p>Наполнители:</p>
+        <label><input type="checkbox" name="stuffing" value="chocolate" checked><span>шоколадные</span></label>
+        <label><input type="checkbox" name="stuffing" value="sugar" checked><span>сахарные присыпки</span></label>
+        <label><input type="checkbox" name="stuffing" value="fruit"><span>фрукты</span></label>
+        <label><input type="checkbox" name="stuffing" value="syrups"><span>сиропы</span></label>
+        <label><input type="checkbox" name="stuffing" value="jams"><span>джемы</span></label>
         <button type="submit" name="filter">Применить</button>
       </form>
 
