@@ -62,20 +62,46 @@
             <td colspan="4">Итого: 750 руб.</td>
           </tr>
         </table>
-        <button class="btn">Оформить заказ</button>
+        <button class="btn" type="submit" name="ordering">Оформить заказ</button>
       </nav>
+
       <div class="contact">
         С 10 до 20, ежедневно<br>
-        <a href="tel:8812450-25-25">8 812 450-25-25</a>
+        <a href="tel:88124502525">8 812 450-25-25</a>
       </div>
     </header>
 
     <main>
-      <!-- breadcrumbs -->
+      <ul class="breadcrumbs">
+       <li><a href="#">Главная</a></li>
+       <li><a href="#">Каталог</a></li>
+       <li><a href="#">Сливочное</a></li>
+     </ul>
 
       <h1>Сливочное мороженое</h1>
-      <form class="catalog-filter" action="catalog-creamy.html" method="post">
-
+      <form class="catalog-filter" action="#" method="post">
+        <label for="sort">Сортировка:</label>
+        <select name="sort" id="sort">
+          <option value="popular" selected>по популярности</option>
+          <option value="low-cost-first">сначала недорогие</option>
+          <option value="high-cost-first">сначала дорогие</option>
+          <option value="fatness">по жирности</option>
+        </select>
+        <label for="price">Цена: 100 руб. – 500 руб.</label>
+        <input type="range" name="price" id="price" min="100" max="500" step="5" value="250">
+        <label>Жирность:</label>
+          <input type="radio" name="fatness" value="0%">0%
+          <input type="radio" name="fatness" value="<10%" checked>до 10%
+          <input type="radio" name="fatness" value="<30%">до 30%
+          <input type="radio" name="fatness" value=">30%">выше 30%
+          <br>
+        <label>Наполнители:</label>
+        <input type="checkbox" name="stuffing" value="chocolate" checked>шоколадные
+        <input type="checkbox" name="stuffing" value="sugar" checked>сахарные присыпки
+        <input type="checkbox" name="stuffing" value="fruit">фрукты
+        <input type="checkbox" name="stuffing" value="syrups">сиропы
+        <input type="checkbox" name="stuffing" value="jams">джемы
+        <button type="submit" name="filter">Применить</button>
       </form>
 
       <section>
