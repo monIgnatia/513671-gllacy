@@ -87,8 +87,13 @@
           <option value="high-cost-first">сначала дорогие</option>
           <option value="fatness">по жирности</option>
         </select>
-        <p>Цена: 100 руб. – 500 руб.</p>
-        <input type="range" name="price" id="price" min="100" max="500" step="5" value="250">
+        <p>
+          <span>Цена:</span>
+          <input type="text" value=100 name="min-price">
+          <span>руб. - </span>
+          <input type="text" value=500 name="max-price">
+          <span>руб.</span>
+        </p>
         <p>Жирность:</p>
           <label><input type="radio" name="fatness" value="0%"><span>0%</span></label>
           <label><input type="radio" name="fatness" value="<10%" checked><span>до 10%</span></label>
