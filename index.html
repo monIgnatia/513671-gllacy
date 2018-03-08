@@ -2,12 +2,13 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
     <title>Глейси</title>
   </head>
   <body>
     <header class="main-header">
       <nav class="main-navigation">
-        <img src="img/logo.png" alt="Логотип Gllacy-shop" width="154" height="64">
+        <img src="img/logo.svg" alt="Логотип Gllacy-shop" width="154" height="64">
         <ul class="site-navigation">
           <li><a href="#">Каталог</a>
             <ul>
@@ -51,6 +52,23 @@
     </header>
 
     <main>
+      <!-- Слайдер фонов -->
+      <section class="main-slider">
+        <img src="img/background-1.png" alt="Крем-брюле и пломбир с малиновым джемом" width="1045" height="881">
+        <p class="main-banner">
+          Крем-брюле и пломбир с малиновым джемом
+        </p>
+        <img src="img/background-2.png" alt="Шоколадный пломбир и лимонный сорбет" width="1065" height="859">
+        <p class="main-banner">
+          Шоколадный пломбир и лимонный сорбет
+        </p>
+        <img src="img/background-3.png" alt="Пломбир с помадкой и клубничный щербет" width="1079" height="854">
+        <p class="main-banner">
+          Пломбир с помадкой и клубничный щербет
+        </p>
+        <a class="btn btn-big" href="#">Давайте оба!</a>
+      </section>
+
       <h1 class="visually-hidden">Магазин мороженого Gllacy</h1>
       <section class="discount">
         <h2 class="visually-hidden">Скидки</h2>
@@ -72,9 +90,9 @@
       <section class="features">
         <h2 class="visually-hidden">Лучшие предложения</h2>
         <article class="feature-item">
-          <img src="img/hit.png" alt="Отметка 'хит'">
+          <img src="img/hit.svg" alt="Отметка 'хит'">
           <figure>
-            <img src="img/ice-cream-1.png" alt="Сливочное мороженое">
+            <img src="img/ice-cream-1.jpg" alt="Сливочное мороженое" width="267" height="267">
             <figcaption>
               Сливочное с апельсиновым джемом и цитрусовой стружкой
             </figcaption>
@@ -83,9 +101,9 @@
         </article>
 
         <article class="feature-item">
-          <img src="img/hit.png" alt="Отметка 'хит'">
+          <img src="img/hit.svg" alt="Отметка 'хит'">
           <figure>
-            <img src="img/ice-cream-2.png" alt="Сливочное-кофейное мороженое">
+            <img src="img/ice-cream-2.jpg" alt="Сливочное-кофейное мороженое" width="267" height="267">
             <figcaption>
               Сливочно-кофейное с кусочками шоколада
             </figcaption>
@@ -94,9 +112,9 @@
         </article>
 
         <article class="feature-item">
-          <img src="img/hit.png" alt="Отметка 'хит'">
+          <img src="img/hit.svg" alt="Отметка 'хит'">
           <figure>
-            <img src="img/ice-cream-3.png" alt="Сливочное-клубничное мороженое">
+            <img src="img/ice-cream-3.jpg" alt="Сливочное-клубничное мороженое" width="267" height="267">
             <figcaption>
               Сливочно-клубничное с присыпкой из белого шоколада
             </figcaption>
@@ -105,9 +123,9 @@
         </article>
 
         <article class="feature-item">
-          <img src="img/hit.png" alt="Отметка 'хит'">
+          <img src="img/hit.svg" alt="Отметка 'хит'">
           <figure>
-            <img src="img/ice-cream-4.png" alt="Сливочное крем-брюле">
+            <img src="img/ice-cream-4.jpg" alt="Сливочное крем-брюле" width="267" height="267">
             <figcaption>
               Сливочное крем-брюле с карамельной подливкой
             </figcaption>
@@ -121,10 +139,14 @@
         <p>
           Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес
         </p>
-        <p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
-        <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
-        <p>Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
-        <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
+        <div class="advantages-left">
+          <p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
+          <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
+        </div>
+        <div class="advantages-right">
+          <p>Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
+          <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
+        </div>
       </section>
 
       <section class="new">
@@ -148,7 +170,7 @@
 
       <section class="location">
         <h2 class="visually-hidden">Адрес магазина и главного офиса</h2>
-        <img src="img/pin.png" alt="Значок 'мороженое'">
+        <img src="img/pin.svg" alt="Значок 'мороженое'">
         <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aaa639709fb971b7f475516a145774b03d5393662b3bbc439954eeefb8acb1038&amp;width=100%25&amp;height=430&amp;lang=ru_RU&amp;scroll=true"></script>
         <div class="address">
           <p>Адрес главного офиса и офлайн-магазина:</p>
@@ -173,10 +195,26 @@
       <h4 class="visually-hidden">Наши страницы в социальных сетях</h4>
       <section class="social">
         <ul>
-          <li><a href="https://twitter.com/">twitter</a></li>
-          <li><a href="#">instagram</a></li>
-          <li><a href="#">facebook</a></li>
-          <li><a href="#">вконтакте</a></li>
+          <li>
+            <a href="https://twitter.com/">
+              <img src="img/twitter.svg" width="38" height="38" alt="tetter">
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/">
+              <img src="img/instagram.svg" width="38" height="38" alt="instagram">
+            </a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/">
+              <img src="img/fb.svg" width="38" height="38" alt="fb">
+            </a>
+          </li>
+          <li>
+            <a href="https://vk.com/">
+              <img src="img/vk.svg" width="38" height="38" alt="vk">
+            </a>
+          </li>
         </ul>
       </section>
 
