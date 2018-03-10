@@ -38,8 +38,10 @@
         </form>
 
         <form class="forms" action="#" method="post">
-          <input type="email" name="e-mail" placeholder="Электронная почта">
-          <input type="password" name="password" placeholder="Пароль">
+          <label for="e-mail-reg" tabindex="0" class="visually-hidden">e-mail</label>
+          <input type="email" name="e-mail" placeholder="Электронная почта" id="e-mail-reg">
+          <label for="pass-reg" tabindex="0" class="visually-hidden">Пароль</label>
+          <input type="password" name="password" id="pass-reg" placeholder="Пароль">
           <button class="btn" type="submit" name="login-in">Войти</button>
           <div class="login-in-link">
             <a href="#">Забыли пароль?</a>
@@ -80,7 +82,7 @@
        <li><a href="#">Сливочное</a></li>
      </ul>
 
-      <h1>Сливочное мороженое</h1>
+      <h1 tabindex="1">Сливочное мороженое</h1>
       <form class="catalog-filter" action="#" method="post">
         <p>Сортировка:</p>
         <select name="sort" id="sort">
