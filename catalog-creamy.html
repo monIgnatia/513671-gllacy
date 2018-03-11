@@ -31,12 +31,14 @@
           <li class="basket-link"><a href="#">Пусто</a></li>
         </ul>
 
+        <!-- Форма поиска -->
         <form class="forms" action="#" method="post">
           <label class="visually-hidden" for="searching" tabindex="0">Поиск</label>
           <input type="search" id="searching" name="search" placeholder="Что ищем?">
           <input type="submit" name="search-button" value="Искать">
         </form>
 
+        <!-- Форма входа / регистрации -->
         <form class="forms" action="#" method="post">
           <label for="e-mail-reg" tabindex="0" class="visually-hidden">e-mail</label>
           <input type="email" name="e-mail" placeholder="Электронная почта" id="e-mail-reg">
@@ -49,14 +51,21 @@
           </div>
         </form>
 
+          <!-- Корзина покупателя -->
         <table class="forms">
           <tr>
+            <td>
+              <button type="button" aria-label="Удалить"></button>
+            </td>
             <td><img src="img/ice-cream-1.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом"></td>
             <td>Пломбир с апельсиновым джемом</td>
             <td>1,5 кг х 200 руб.</td>
             <td>300 руб.</td>
           </tr>
           <tr>
+            <td>
+              <button class="close-cross-btn" type="button" aria-label="Удалить"></button>
+            </td>
             <td><img src="img/ice-cream-3.jpg" width="33" height="33" alt="Клубничный пломбир"></td>
             <td>Клубничный пломбир с присыпкой  из белого шоколада</td>
             <td>1,5 кг х 200 руб.</td>
@@ -240,23 +249,23 @@
       <section class="social">
         <ul>
           <li>
-            <a href="https://twitter.com/">
-              <img src="img/twitter.svg" width="38" height="38" alt="tetter">
+            <a href="https://twitter.com/" aria-label="twitter">
+              <img src="img/twitter.svg" width="38" height="38" alt="Твиттер">
             </a>
           </li>
           <li>
-            <a href="https://www.instagram.com/">
-              <img src="img/instagram.svg" width="38" height="38" alt="instagram">
+            <a href="https://www.instagram.com/" aria-label="Instagram">
+              <img src="img/instagram.svg" width="38" height="38" alt="Инстаграм">
             </a>
           </li>
           <li>
-            <a href="https://www.facebook.com/">
-              <img src="img/fb.svg" width="38" height="38" alt="fb">
+            <a href="https://www.facebook.com/" aria-label="Facebook">
+              <img src="img/fb.svg" width="38" height="38" alt="Фейсбук">
             </a>
           </li>
           <li>
-            <a href="https://vk.com/">
-              <img src="img/vk.svg" width="38" height="38" alt="vk">
+            <a href="https://vk.com/" aria-label="Контакте">
+              <img src="img/vk.svg" width="38" height="38" alt="В Контакте">
             </a>
           </li>
         </ul>
