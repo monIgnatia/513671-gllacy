@@ -3,15 +3,11 @@ body {
 }
 
 .advantages {
-  width: 1146px;
-  height: 306px;
   border-radius: 20px;
   background: url("../img/wafle.jpg");
 }
 
 .mailing {
-  width: 560px;
-  height: 220px;
   border-radius: 20px;
   background-image: repeating-linear-gradient(135deg, #f8f7f4, #f8f7f4 7px, #94ceff 7px, #94ceff 14px, #f8f7f4 14px, #f8f7f4 21px, #fe9e90 21px, #fe9e90 28px);
 }
