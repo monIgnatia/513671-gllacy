@@ -1,6 +1,89 @@
 body {
+  font-family: "Roboto", helvetica, sans-serif;
   background-color: #849d8f;
 }
+
+.site-navigation,
+.site-navigation-2 {
+  list-style: none;
+}
+
+.site-navigation li {
+  display: inline-block;
+}
+.site-navigation-2 li {
+  display: block;
+}
+
+.site-navigation a {
+  font-size: 16px;
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+  line-height: 18px;
+  text-align: left;
+  list-style: none;
+  text-decoration: underline;
+  text-decoration-color: rgba(255, 255, 255, 0.2);
+  text-underline-position: under;
+}
+
+.site-navigation a:hover {
+  color: #333333;
+  font-weight: 700;
+  background-color: #f8f7f4;
+}
+
+.site-navigation-2 {
+  display: none;
+  background-color: #f7f6f3;
+}
+
+.site-navigation li:hover .site-navigation-2 {
+  display: block;
+}
+
+.site-navigation-2 a {
+  font-size: 14px;
+  font-weight: 400;
+  color: #333333;
+  margin-left: 0;
+}
+
+.site-navigation-2 li:hover {
+  line-height: 16px;
+  text-align: left;
+  background-color: #fbded7;
+}
+
+.site-navigation-2 a:hover {
+  font-weight: 400;
+  background-color: #fbded7;
+}
+
+/* пользовательское меню */
+
+.user-menu li {
+  display: inline-block;
+
+}
+
+.user-menu a {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 16px;
+  text-decoration: none;
+  background-color: rgba(248, 247, 244, 0.2);
+}
+
+.user-menu a:hover {
+  color: #333333;
+  background-color: rgba(248, 247, 244, 1)
+}
+
+
+
+
+
 
 .advantages {
   border-radius: 20px;
