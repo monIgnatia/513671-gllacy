@@ -1,6 +1,11 @@
 body {
   font-family: "Roboto", helvetica, sans-serif;
+  font-size: 16px;
   background-color: #849d8f;
+}
+
+.visually-hidden {
+  display: none;
 }
 
 .site-navigation,
@@ -16,7 +21,6 @@ body {
 }
 
 .site-navigation a {
-  font-size: 16px;
   font-weight: 400;
   color: rgb(255, 255, 255);
   line-height: 18px;
@@ -33,6 +37,10 @@ body {
   background-color: #f8f7f4;
 }
 
+.navigation-open {
+  color: #ffffff;
+  background-color: #d07058;
+}
 .site-navigation-2 {
   display: none;
   background-color: #f7f6f3;
@@ -64,12 +72,12 @@ body {
 
 .user-menu li {
   display: inline-block;
-
 }
 
 .user-menu a {
   color: #ffffff;
   font-size: 14px;
+  font-weight: 500;
   line-height: 16px;
   text-decoration: none;
   background-color: rgba(248, 247, 244, 0.2);
@@ -80,9 +88,88 @@ body {
   background-color: rgba(248, 247, 244, 1)
 }
 
+.forms {
+  background-color: #f8f7f4;
+  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+  border-radius: 6px;
+}
 
+.forms input:focus {
+  outline: 2px solid #f26843;
+}
 
+/* форма поиска */
+#searching,
+/* форма входа / регистрации */
+#e-mail-reg,
+#pass-reg {
+  font-size: 14px;
+  line-height: 24px;
+  color: #999999;
+  background-color: #ffffff;
+  border: 1px solid #d3d3d2;
+}
 
+.btn {
+  display: block;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+  color: #fefefe;
+  background: #e74b36;
+  background: linear-gradient(to top, #e74b36, #f26843);
+  padding: 10px 20px;
+  border-radius: 22px;
+  box-shadow: 0px 1px 2px 0px rgba(172, 16, 0, 0.004);
+}
+
+.login-in-link a {
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 300;
+  color: rgb(50, 50, 50);
+  text-decoration: underline;
+  text-decoration-color: rgba(50, 50, 50, 0.3);
+  text-underline-position: under;
+}
+
+.login-in-link a:hover {
+  color: #f26843;
+}
+
+.login-in-link a:active {
+  color: #e84d37;
+}
+
+.busket {
+  font-size: 13px;
+  color: #484847;
+}
+
+.busket-price-unit {
+  color: #999999;
+}
+
+.busket-sum {
+  font-size: 15px;
+  line-height: 18px;
+  color: #323232;
+  text-align: right;
+}
+
+.contact {
+  font-size: 14px;
+  color: #ffffff;
+  text-align: right;
+}
+
+.contact a {
+  font-size: 22px;
+  line-height 24px;
+  color: #ffffff;
+  text-align: right;
+  text-decoration: none;
+}
 
 
 .advantages {

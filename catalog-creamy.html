@@ -12,8 +12,8 @@
       <nav class="main-navigation">
         <a href="index.html"><img src="img/logo.svg" alt="Логотип Gllacy-shop" width="154" height="64"></a>
         <ul class="site-navigation">
-          <li><a href="#">Каталог</a>
-            <ul>
+          <li><a class="navigation-open" href="#">Каталог</a>
+            <ul class="site-navigation-2">
               <li><a href="#">Новинки</a></li>
               <li><a href="catalog-creamy.html">Сливочное</a></li>
               <li><a href="#">Щербеты</a></li>
@@ -26,8 +26,8 @@
         </ul>
       </nav>
 
-      <section class="user-menu">
-        <ul>
+      <section class="user">
+        <ul class="user-menu">
           <li class="search-link"><a href="#">Поиск</a></li>
           <li class="login-link"><a href="#">Вход</a></li>
           <li class="basket-link"><a href="#">Пусто</a></li>
@@ -37,7 +37,7 @@
         <form class="forms" action="#" method="post">
           <label class="visually-hidden" for="searching" tabindex="0">Поиск</label>
           <input type="search" id="searching" name="search" placeholder="Что ищем?">
-          <input type="submit" name="search-button" value="Искать">
+          <input type="submit" name="search-button">
         </form>
 
         <!-- Форма входа / регистрации -->
@@ -54,14 +54,14 @@
         </form>
 
           <!-- Корзина покупателя -->
-        <table class="forms">
+        <table class="forms busket">
           <tr>
             <td>
               <button type="button" aria-label="Удалить"></button>
             </td>
             <td><img src="img/ice-cream-1.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом"></td>
             <td>Пломбир с апельсиновым джемом</td>
-            <td>1,5 кг х 200 руб.</td>
+            <td>1,5 кг х <span class="busket-price-unit">200 руб.</span></td>
             <td>300 руб.</td>
           </tr>
           <tr>
@@ -70,11 +70,11 @@
             </td>
             <td><img src="img/ice-cream-3.jpg" width="33" height="33" alt="Клубничный пломбир"></td>
             <td>Клубничный пломбир с присыпкой  из белого шоколада</td>
-            <td>1,5 кг х 200 руб.</td>
+            <td>1,5 кг х <span class="busket-price-unit">300 руб.</span></td>
             <td>450 руб.</td>
           </tr>
           <tr>
-            <td colspan="4">Итого: 750 руб.</td>
+            <td class="busket-sum" colspan="5">Итого: 750 руб.</td>
           </tr>
         </table>
         <button class="btn" type="submit" name="ordering">Оформить заказ</button>
