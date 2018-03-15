@@ -1,6 +1,7 @@
 body {
-  font-family: "Roboto", helvetica, sans-serif;
+  font-family: "Roboto", Helvetica, sans-serif;
   font-size: 16px;
+  line-height: 22px;
   background-color: #849d8f;
 }
 
@@ -14,7 +15,7 @@ body {
 }
 
 .site-navigation li {
-  display: inline-block;
+  display: inline-flex;
 }
 .site-navigation-2 li {
   display: block;
@@ -46,13 +47,14 @@ body {
   background-color: #f7f6f3;
 }
 
-.site-navigation li:hover .site-navigation-2 {
-  display: block;
+li:hover .site-navigation-2 {
+  display: flex;
 }
 
 .site-navigation-2 a {
   font-size: 14px;
   font-weight: 400;
+  line-height: 16px;
   color: #333333;
   margin-left: 0;
 }
@@ -94,20 +96,18 @@ body {
   border-radius: 6px;
 }
 
-.forms input:focus {
-  outline: 2px solid #f26843;
-}
-
 /* форма поиска */
-#searching,
 /* форма входа / регистрации */
-#e-mail-reg,
-#pass-reg {
+.forms input {
   font-size: 14px;
   line-height: 24px;
   color: #999999;
   background-color: #ffffff;
   border: 1px solid #d3d3d2;
+}
+
+.forms input:focus {
+  outline: 2px solid #f26843;
 }
 
 .btn {
@@ -141,16 +141,16 @@ body {
   color: #e84d37;
 }
 
-.busket {
+.basket {
   font-size: 13px;
   color: #484847;
 }
 
-.busket-price-unit {
+.basket-price-unit {
   color: #999999;
 }
 
-.busket-sum {
+.basket-sum {
   font-size: 15px;
   line-height: 18px;
   color: #323232;
@@ -165,17 +165,116 @@ body {
 
 .contact a {
   font-size: 22px;
-  line-height 24px;
+  line-height: 24px;
   color: #ffffff;
   text-align: right;
   text-decoration: none;
 }
 
 
+/* Слайдер фонов */
+.main-banner {
+  font-size: 60px;
+  line-height: 60.35px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.btn-big {
+  font-size: 32px;
+  line-height: 44px;
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
+  text-decoration: none;
+}
+
+/* Скидки */
+.discount p:first-of-type {
+  font-size: 35px;
+  font-weight: 600;
+  line-height: 41px;
+  color: #ffffff;
+}
+
+.discount {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22px;
+  color: #ffffff;
+  text-align: left;
+}
+
+.discount a {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Лучшие предложения */
+.feature-item {
+  font-size: 45px;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 45px;
+  text-align: left;
+  text-shadow: 0px 1px 3px rgba(49, 50, 53, 0.5);
+}
+
+figcaption {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  list-style: none;
+  text-decoration: underline;
+  text-decoration-color: rgba(255, 255, 255, 0.2);
+  text-underline-position: under;
+  text-shadow: none;
+}
+
+.feature-item span {
+  font-size: 30px;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 45px;
+  text-align: left;
+  text-shadow: 0px 1px 3px rgba(49, 50, 53, 0.5);
+}
+
+/* Наши преимущества */
 .advantages {
   border-radius: 20px;
   background: url("../img/wafle.jpg");
 }
+
+.advantages p:first-of-type {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.new {
+  color: #323232;
+  background-image: url(../img/ham-and-strawberry.png);
+  background-repeat: no-repeat;
+  background-color: #ffffff;
+  border-radius: 20px;
+}
+
+.new a {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  color: #323232;
+  text-align: left;
+}
+
+/* Рассылка */
 
 .mailing {
   border-radius: 20px;
