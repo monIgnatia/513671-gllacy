@@ -41,7 +41,13 @@ body {
 .navigation-open {
   color: #ffffff;
   background-color: #d07058;
+  text-decoration: none;
 }
+
+.site-navigation .navigation-open {
+  text-decoration: none;
+}
+
 .site-navigation-2 {
   display: none;
   background-color: #f7f6f3;
@@ -107,7 +113,8 @@ li:hover .site-navigation-2 {
 }
 
 .forms input:focus,
-.forms textarea:focus {
+.forms textarea:focus,
+button:focus {
   outline: 2px solid #f26843;
 }
 
@@ -157,11 +164,17 @@ li:hover .site-navigation-2 {
 
 .basket-sum {
   font-size: 15px;
+  font-weight: 700;
   line-height: 18px;
   color: #323232;
   text-align: right;
 }
 
+.basket button {
+  box-shadow: 0px 1px 2px 0px rgba(172, 16, 0, 0.004);
+}
+
+/* Контактный телефон */
 .contact {
   font-size: 14px;
   color: #ffffff;
@@ -366,4 +379,39 @@ address a {
   font-size: 12px;
   line-height: 18px;
   color: #ffffff;
+}
+
+/* Стили каталога */
+.breadcrumbs ul{
+  font-size: 14px;
+  line-height: 16px;
+  list-style: none;
+}
+
+.breadcrumbs a {
+  color: #ffffff;
+  text-decoration: underline;
+  text-decoration-color: rgba(255, 255, 255, 0.2);
+  text-underline-position: under;
+}
+
+.breadcrumbs-open a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 35px;
+  color: #ffffff;
+  font-weight: bold;
+  line-height: 41px;
+  text-align: left;
+}
+
+.pagination ul {
+  list-style: none;
+}
+
+.pagination a {
+  color: #ffffff;
+  text-decoration: none;
 }

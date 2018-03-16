@@ -14,7 +14,7 @@
         <ul class="site-navigation">
           <li><a class="navigation-open" href="#">Каталог</a>
             <ul class="site-navigation-2">
-              <li><a href="#">Новинки</a></li>
+              <li><a href="#"><b>Новинки</b></a></li>
               <li><a href="catalog-creamy.html">Сливочное</a></li>
               <li><a href="#">Щербеты</a></li>
               <li><a href="#">Фруктовый лед</a></li>
@@ -70,11 +70,11 @@
             </td>
             <td><img src="img/ice-cream-3.jpg" width="33" height="33" alt="Клубничный пломбир"></td>
             <td>Клубничный пломбир с присыпкой  из белого шоколада</td>
-            <td>1,5 кг х <span class="busket-price-unit">300 руб.</span></td>
+            <td>1,5 кг х <span class="basket-price-unit">300 руб.</span></td>
             <td>450 руб.</td>
           </tr>
           <tr>
-            <td class="busket-sum" colspan="5">Итого: 750 руб.</td>
+            <td class="basket-sum" colspan="5">Итого: 750 руб.</td>
           </tr>
         </table>
         <button class="btn" type="submit" name="ordering">Оформить заказ</button>
@@ -87,11 +87,13 @@
     </header>
 
     <main>
-      <ul class="breadcrumbs">
-       <li><a href="index.html">Главная</a></li>
-       <li><a href="#">Каталог</a></li>
-       <li><a href="#">Сливочное</a></li>
-     </ul>
+      <div class="breadcrumbs">
+        <ul>
+         <li><a href="index.html">Главная</a></li>
+         <li><a href="#">Каталог</a></li>
+         <li class="breadcrumbs-open"><a href="#">Сливочное</a></li>
+       </ul>
+      </div>
 
       <h1>Сливочное мороженое</h1>
       <form class="catalog-filter" action="#" method="post">
