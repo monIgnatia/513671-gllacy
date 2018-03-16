@@ -101,13 +101,18 @@ li:hover .site-navigation-2 {
 .forms input {
   font-size: 14px;
   line-height: 24px;
-  color: #999999;
+  color: #333333;
   background-color: #ffffff;
   border: 1px solid #d3d3d2;
 }
 
-.forms input:focus {
+.forms input:focus,
+.forms textarea:focus {
   outline: 2px solid #f26843;
+}
+
+.forms input[placeholder] {
+  color: #999999;
 }
 
 .btn {
@@ -204,6 +209,15 @@ li:hover .site-navigation-2 {
   line-height: 22px;
   color: #ffffff;
   text-align: left;
+  background-repeat: no-repeat;
+}
+
+.discount-rasp {
+  background-image: url(../img/raspberry.jpg);
+}
+
+.discount-choc {
+  background-image: url(../img/chocolate.jpg);
 }
 
 .discount a {
@@ -275,8 +289,81 @@ figcaption {
 }
 
 /* Рассылка */
-
 .mailing {
   border-radius: 20px;
   background-image: repeating-linear-gradient(135deg, #f8f7f4, #f8f7f4 7px, #94ceff 7px, #94ceff 14px, #f8f7f4 14px, #f8f7f4 21px, #fe9e90 21px, #fe9e90 28px);
+}
+
+.mailing-bg {
+  color: #5a5a5a;
+  background-color: #f8f7f4;
+  margin: 6px;
+}
+
+.mailing-bg input[placeholder] {
+  line-height: 24px;
+}
+
+.mailing form {
+  box-shadow: none;
+}
+
+/* Адрес магазина */
+address {
+  font-size: 14px;
+  line-height: 20px;
+  font-style: normal;
+  background-color: #fefefe;
+}
+
+address span {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+address a {
+  text-decoration: none;
+}
+
+/* Форма обратной связи */
+.forms .form-feedback,
+.form-feedback textarea {
+  font-size: 16px;
+  line-height: 24px;
+  color: #999999;
+}
+
+.form-feedback span {
+  font-size: 24px;
+  line-height: 28px;
+  color: #323232;
+}
+
+/* Футер */
+.social ul,
+.footer-menu ul {
+  list-style: none;
+}
+
+.footer-menu a {
+  font-size: 13px;
+  font-weight: 200;
+  color: #ffffff;
+  line-height: 18px;
+  text-align: left;
+  text-decoration: underline;
+  text-decoration-color: rgba(255, 255, 255, 0.2);
+  text-underline-position: under;
+}
+
+.footer-menu span {
+  font-weight: 600;
+}
+
+.copyright p,
+.copyright a {
+  font-size: 12px;
+  line-height: 18px;
+  color: #ffffff;
 }
