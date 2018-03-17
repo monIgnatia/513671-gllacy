@@ -65,6 +65,10 @@ li:hover .site-navigation-2 {
   margin-left: 0;
 }
 
+.site-nav-2-bold {
+  font-weight: 700;
+}
+
 .site-navigation-2 li:hover {
   line-height: 16px;
   text-align: left;
@@ -113,8 +117,7 @@ li:hover .site-navigation-2 {
 }
 
 .forms input:focus,
-.forms textarea:focus,
-button:focus {
+.forms textarea:focus {
   outline: 2px solid #f26843;
 }
 
@@ -132,6 +135,10 @@ button:focus {
   padding: 10px 20px;
   border-radius: 22px;
   box-shadow: 0px 1px 2px 0px rgba(172, 16, 0, 0.004);
+}
+
+.btn:focus {
+  outline: 2px solid #f26843;
 }
 
 .btn:hover {
@@ -239,10 +246,12 @@ button:focus {
 }
 
 .discount-rasp {
+  background-color: #a6093a;
   background-image: url(../img/raspberry.jpg);
 }
 
 .discount-choc {
+  background-color: #54301d;
   background-image: url(../img/chocolate.jpg);
 }
 
@@ -265,7 +274,7 @@ button:focus {
   text-shadow: 0px 1px 3px rgba(49, 50, 53, 0.5);
 }
 
-figcaption {
+.feature-name {
   font-size: 16px;
   font-weight: 400;
   line-height: 22px;
@@ -335,20 +344,20 @@ figcaption {
 }
 
 /* Адрес магазина */
-address {
+.address {
   font-size: 14px;
   line-height: 20px;
   font-style: normal;
   background-color: #fefefe;
 }
 
-address span {
+.address span {
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
 }
 
-address a {
+.address a {
   text-decoration: none;
 }
 
@@ -395,7 +404,7 @@ address a {
 }
 
 /* Стили каталога */
-.breadcrumbs ul{
+.breadcrumbs li {
   font-size: 14px;
   line-height: 16px;
   list-style: none;
@@ -412,7 +421,7 @@ address a {
   text-decoration: none;
 }
 
-h1 {
+.page-name {
   font-size: 35px;
   color: #ffffff;
   font-weight: bold;
@@ -434,6 +443,7 @@ h1 {
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 20px;
 }
+
 .pagination ul {
   list-style: none;
 }
