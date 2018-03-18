@@ -246,6 +246,10 @@ li:hover .site-navigation-2 {
   color: #ffffff;
   text-align: left;
   background-repeat: no-repeat;
+  width: 48%;
+  max-height: 229px;
+  overflow: hidden;
+  border-radius: 20px;
 }
 
 .discount-rasp {
@@ -457,18 +461,18 @@ li:hover .site-navigation-2 {
 }
 
 /* Сетка сайта */
+/* Главная */
+/* header */
 .wrapper {
   padding-left: 27px;
   padding-right: 27px;
   max-width: 1200px;
-  /* margin-left: auto;
- margin-right: auto; */
+  margin: 0 auto;
 }
 
 .main-navigation {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 18px;
 }
 
 .site-navigation {
@@ -502,4 +506,41 @@ li:hover .site-navigation-2 {
 
 .form-feedback {
   display: none;
+}
+
+/* main */
+.main-slider {
+  display: flex;
+  flex-direction: column;
+  margin-top: -120px;
+  align-items: center;
+  z-index: 3;
+}
+
+.main-banner {
+  max-width: 665px;
+  max-height: 880px;
+  margin-top: -490px;
+  margin-bottom: 35px;
+}
+
+.btn-big {
+  margin-bottom: 40px;
+}
+
+.discount-wrapper {
+  display: flex;
+  align-content: space-between;
+}
+
+.discount {
+  width: 48%;
+  max-height: 229px;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.discount a {
+  display: flex;
+  justify-content: flex-end;
 }
