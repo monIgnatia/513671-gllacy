@@ -149,14 +149,14 @@ li:hover .site-navigation-2 {
 
 .btn:hover {
   background: linear-gradient(to top, #ec6f5e, #f58669);
-  padding: 10px 20px;
+  padding: 10px 20px 15px 20px;
   border-radius: 22px;
   box-shadow: 0px 1px 2px 0px #ac1000;
 }
 
 .btn:active {
   background: linear-gradient(to top, #e1613e, #c73f2c);
-  padding: 10px 20px;
+  padding: 10px 20px 15px 20px;
   border-radius: 22px;
   box-shadow: inset 0px 1px 2px 0px #ac1000;
 }
@@ -474,21 +474,36 @@ li:hover .site-navigation-2 {
 
 .main-navigation {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
+  align-items: center;
   position: relative;
   z-index: 4;
 }
 
-.site-navigation {
-  max-width: 676px;
+.main-navigation img {
+  padding-top: 10px;
+}
+
+.wrapper-navigation {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
   margin: 0;
   padding: 0;
+  padding-left: 10px;
+}
+
+.site-navigation {
+  margin: 0;
+  padding: 0;
+  padding-left: 10px;
 }
 
 .user-menu {
   min-width: 260px;
   margin: 0;
   padding: 0;
+  justify-content: flex-end;
 }
 
 .contact {
@@ -537,7 +552,7 @@ li:hover .site-navigation-2 {
   border-radius: 40px;
 }
 
-.index-discount {
+.discount-wrapper {
   display: flex;
   align-content: space-between;
 }
@@ -550,8 +565,13 @@ li:hover .site-navigation-2 {
   margin-bottom: 40px;
   padding: 20px;
 }
+.discount-header {
+  margin: 0;
+  padding: 0;
+}
 
 .discount-rasp {
+  margin: 0;
   margin-right: 40px;
 }
 
@@ -559,6 +579,7 @@ li:hover .site-navigation-2 {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .feature-item {
@@ -651,4 +672,44 @@ li:hover .site-navigation-2 {
 .index-footer {
   display: flex;
   justify-content: space-between;
+}
+
+/* Сетка на страницк каталога */
+
+.catalog-header-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin: 0;
+  margin-bottom: 12px;
+}
+
+.breadcrumbs {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+}
+
+.catalog-contact {
+  margin: 0;
+  padding: 0;
+}
+
+.page-name {
+  margin: 0;
+  margin-bottom: 25px;
+  padding: 0;
+}
+
+.catalog-filter {
+  display: flex;
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.pagination-list {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0;
+  padding: 0;
 }
