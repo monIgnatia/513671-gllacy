@@ -1,4 +1,6 @@
 body {
+  margin: 0;
+  padding: 0;
   font-family: "Roboto", Helvetica, sans-serif;
   font-size: 16px;
   line-height: 22px;
@@ -136,7 +138,7 @@ li:hover .site-navigation-2 {
   line-height: 24px;
   color: #fefefe;
   background: linear-gradient(to top, #e74b36, #f26843);
-  padding: 10px 20px;
+  padding: 10px 20px 15px 20px;
   border-radius: 22px;
   box-shadow: 0px 1px 2px 0px rgba(172, 16, 0, 0.004);
 }
@@ -473,6 +475,8 @@ li:hover .site-navigation-2 {
 .main-navigation {
   display: flex;
   justify-content: space-between;
+  position: relative;
+  z-index: 4;
 }
 
 .site-navigation {
@@ -488,6 +492,8 @@ li:hover .site-navigation-2 {
 }
 
 .contact {
+  position: relative;
+  z-index: 5;
   margin: 0;
   padding: 0;
 }
@@ -525,22 +531,124 @@ li:hover .site-navigation-2 {
 }
 
 .btn-big {
+  padding-left: 40px;
+  padding-right: 40px;
   margin-bottom: 40px;
+  border-radius: 40px;
 }
 
-.discount-wrapper {
+.index-discount {
   display: flex;
   align-content: space-between;
 }
 
 .discount {
-  width: 48%;
-  max-height: 229px;
+  min-height: 229px;
   overflow: hidden;
   border-radius: 20px;
+  margin: 0;
+  margin-bottom: 40px;
+  padding: 20px;
 }
 
-.discount a {
+.discount-rasp {
+  margin-right: 40px;
+}
+
+.features {
+  width: 100%;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
+}
+
+.feature-item {
+  display: flex;
+  flex-direction: column;
+  max-width: 267px;
+  margin: 0;
+  margin-right: 26px;
+  margin-bottom: 40px;
+  padding: 0;
+}
+
+.features:last-child {
+  margin-right: 0;
+}
+
+.circle-img {
+  max-height: 267px;
+  margin: 0;
+  padding: 0;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.feature-name {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.features p {
+  margin: 0;
+  padding: 0;
+}
+
+.advantages {
+  margin: 0 0 40px 0;
+  padding: 29px 20px;
+}
+
+.advantages-main {
+  margin: 0;
+  padding: 0;
+}
+
+.new-and-mailing {
+  display:flex;
+  margin: 0;
+  margin-bottom: 40px;
+  padding: 0;
+}
+
+.new,
+.mailing {
+  width: 50%;
+  min-height: 220px;
+  margin: 0;
+  padding: 0;
+}
+
+.new {
+  margin-right: 40px;
+  padding: 26px 20px;
+}
+.new p {
+  margin: 0;
+}
+.location {
+  display: block;
+  position: relative;
+  margin: 0;
+  margin-bottom: 18px;
+  z-index: 0;
+}
+
+.address {
+  position: absolute;
+  top: 0;
+  right: 0;
+  max-width: 302px;
+  margin: 0;
+}
+
+.location img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.index-footer {
+  display: flex;
+  justify-content: space-between;
 }
