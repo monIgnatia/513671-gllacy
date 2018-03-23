@@ -5,6 +5,8 @@ body {
   font-size: 16px;
   line-height: 22px;
   background-color: #849d8f;
+  background-image: url("../img/background-1.png");
+  background-repeat: no-repeat;
 }
 
 .visually-hidden {
@@ -56,16 +58,15 @@ body {
   background-color: #f7f6f3;
 }
 
-li:hover .site-navigation-2 {
+/* li:hover .site-navigation-2 {
   display: block;
-}
+} */
 
 .site-navigation-2 a {
   font-size: 14px;
   font-weight: 400;
   line-height: 16px;
   color: #333333;
-  padding-left: 0;
 }
 
 .site-nav-2-bold {
@@ -150,14 +151,14 @@ li:hover .site-navigation-2 {
 .btn:hover {
   background: linear-gradient(to top, #ec6f5e, #f58669);
   padding: 10px 20px 15px 20px;
-  border-radius: 22px;
+  border-radius: 40px;
   box-shadow: 0px 1px 2px 0px #ac1000;
 }
 
 .btn:active {
   background: linear-gradient(to top, #e1613e, #c73f2c);
   padding: 10px 20px 15px 20px;
-  border-radius: 22px;
+  border-radius: 40px;
   box-shadow: inset 0px 1px 2px 0px #ac1000;
 }
 
@@ -231,30 +232,49 @@ li:hover .site-navigation-2 {
   text-align: center;
   text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
   text-decoration: none;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-bottom: 40px;
+  border-radius: 40px;
+
 }
 
 /* Скидки */
-.discount p:first-of-type {
-  font-size: 35px;
-  font-weight: 600;
-  line-height: 41px;
-  color: #ffffff;
+.discount-wrapper {
+  display: flex;
+  align-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
 }
 
 .discount {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 230px;
+  flex-grow: 1;
+  justify-content: space-between;
   font-size: 18px;
   font-weight: 600;
   line-height: 22px;
   color: #ffffff;
   text-align: left;
   background-repeat: no-repeat;
-  width: 48%;
-  max-height: 229px;
-  overflow: hidden;
+  width: 50%;
   border-radius: 20px;
+  overflow: hidden;
+  padding: 20px;
+}
+
+.discount-header {
+  font-size: 35px;
+  font-weight: 600;
+  line-height: 41px;
+  color: #ffffff;
+  margin: 0;
 }
 
 .discount-rasp {
+  margin-right: 40px;
   background-color: #a6093a;
   background-image: url(../img/raspberry.jpg);
 }
@@ -264,17 +284,32 @@ li:hover .site-navigation-2 {
   background-image: url(../img/chocolate.jpg);
 }
 
-.discount a {
+.discount .btn {
   font-size: 18px;
   font-weight: 600;
   line-height: 24px;
   color: #ffffff;
   text-align: center;
   text-decoration: none;
+  align-self: flex-end;
+  justify-content: flex-end;
+  margin-top: auto;
 }
 
 /* Лучшие предложения */
+.features {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-bottom: 10px;
+}
+
 .feature-item {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 267px;
+  margin-bottom: 40px;
+  padding: 0;
   font-size: 45px;
   font-weight: 700;
   color: #ffffff;
@@ -283,13 +318,20 @@ li:hover .site-navigation-2 {
   text-shadow: 0px 1px 3px rgba(49, 50, 53, 0.5);
 }
 
+.circle-img {
+  width: 265px;
+  height: 265px;
+  margin: auto;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
 .feature-name {
   font-size: 16px;
   font-weight: 400;
   line-height: 22px;
   color: rgb(255, 255, 255);
   text-align: center;
-  list-style: none;
   text-decoration: underline;
   text-decoration-color: rgba(255, 255, 255, 0.2);
   text-underline-position: under;
@@ -307,24 +349,70 @@ li:hover .site-navigation-2 {
 
 /* Наши преимущества */
 .advantages {
+  margin-bottom: 40px;
+  padding: 29px 20px;
   border-radius: 20px;
   background: url("../img/wafle.jpg");
 }
 
-.advantages p:first-of-type {
+.advantages-main {
   font-size: 24px;
   line-height: 30px;
+  margin: 0;
+}
+
+.advantages-p-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  min-height: 306px;
+}
+
+.advantages-p-wrapper p {
+  width: 40%;
+  flex-grow: 1;
+  flex-shrink: 2;
+  padding-left: 58px;
+}
+
+.advantages-p-wrapper p:nth-child(odd) {
+  margin-right: 40px;
+}
+
+/* Новинки */
+.new-and-mailing {
+  display:flex;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.new,
+.mailing {
+  box-sizing: border-box;
+  flex-basis: 48%;
+  justify-content: space-between;
+  min-height: 220px;
 }
 
 .new {
+  flex-grow: 1;
   color: #323232;
+  background-color: #ffffff;
   background-image: url(../img/ham-and-strawberry.png);
   background-repeat: no-repeat;
-  background-color: #ffffff;
+  background-position: top -30px right -20px;
   border-radius: 20px;
+  margin-right: 40px;
+  padding: 25px 20px;
+}
+
+.new p {
+  margin: 0;
 }
 
 .new a {
+  display: block;
+  width: 280px;
   font-size: 24px;
   font-weight: 700;
   line-height: 30px;
@@ -334,23 +422,49 @@ li:hover .site-navigation-2 {
 
 /* Рассылка */
 .mailing {
+  display: flex;
+  flex-grow: 1;
+  padding: 6px;
   border-radius: 20px;
   background-image: repeating-linear-gradient(135deg, #f8f7f4, #f8f7f4 7px, #94ceff 7px, #94ceff 14px, #f8f7f4 14px, #f8f7f4 21px, #fe9e90 21px, #fe9e90 28px);
 }
 
 .mailing-bg {
+  display: flex;
+
+  flex-direction: column;
+  justify-content: space-between;
   color: #5a5a5a;
   background-color: #f8f7f4;
-  margin: 6px;
+  border-radius: 20px;
+  align-self: center;
 }
 
 .mailing-bg input[placeholder] {
+  flex-grow: 1;
   line-height: 24px;
+  border-radius: 6px;
+  padding: 10px 20px;
 }
 
 .mailing form {
   box-shadow: none;
+  border-radius: 20px;
+  padding: 35px;
 }
+
+.mailing p {
+  margin: 0;
+  padding: 20px;
+  padding-bottom: 12px;
+}
+
+.mailing .btn {
+  margin-left: 10px;
+}
+
+
+
 
 /* Адрес магазина */
 .address {
@@ -469,15 +583,13 @@ li:hover .site-navigation-2 {
   padding-left: 27px;
   padding-right: 27px;
   max-width: 1200px;
+  box-sizing: border-box;
   margin: 0 auto;
 }
 
 .main-navigation {
   display: flex;
   justify-content: flex-start;
-  align-items: center;
-  position: relative;
-  z-index: 4;
 }
 
 .main-navigation img {
@@ -488,8 +600,6 @@ li:hover .site-navigation-2 {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  margin: 0;
-  padding: 0;
   padding-left: 10px;
 }
 
@@ -533,120 +643,18 @@ li:hover .site-navigation-2 {
 .main-slider {
   display: flex;
   flex-direction: column;
-  margin-top: -120px;
-  align-items: center;
-  z-index: 3;
 }
 
 .main-banner {
   max-width: 665px;
   max-height: 880px;
-  margin-top: -490px;
+  margin-top: 490px;
   margin-bottom: 35px;
 }
 
-.btn-big {
-  padding-left: 40px;
-  padding-right: 40px;
-  margin-bottom: 40px;
-  border-radius: 40px;
-}
 
-.discount-wrapper {
-  display: flex;
-  align-content: space-between;
-}
 
-.discount {
-  min-height: 229px;
-  overflow: hidden;
-  border-radius: 20px;
-  margin: 0;
-  margin-bottom: 40px;
-  padding: 20px;
-}
-.discount-header {
-  margin: 0;
-  padding: 0;
-}
 
-.discount-rasp {
-  margin: 0;
-  margin-right: 40px;
-}
-
-.features {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.feature-item {
-  display: flex;
-  flex-direction: column;
-  max-width: 267px;
-  margin: 0;
-  margin-right: 26px;
-  margin-bottom: 40px;
-  padding: 0;
-}
-
-.features:last-child {
-  margin-right: 0;
-}
-
-.circle-img {
-  max-height: 267px;
-  margin: 0;
-  padding: 0;
-  border-radius: 50%;
-  overflow: hidden;
-}
-
-.feature-name {
-  display: flex;
-  margin: 0;
-  padding: 0;
-}
-
-.features p {
-  margin: 0;
-  padding: 0;
-}
-
-.advantages {
-  margin: 0 0 40px 0;
-  padding: 29px 20px;
-}
-
-.advantages-main {
-  margin: 0;
-  padding: 0;
-}
-
-.new-and-mailing {
-  display:flex;
-  margin: 0;
-  margin-bottom: 40px;
-  padding: 0;
-}
-
-.new,
-.mailing {
-  width: 50%;
-  min-height: 220px;
-  margin: 0;
-  padding: 0;
-}
-
-.new {
-  margin-right: 40px;
-  padding: 26px 20px;
-}
-.new p {
-  margin: 0;
-}
 .location {
   display: block;
   position: relative;

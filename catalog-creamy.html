@@ -29,60 +29,60 @@
 
             <section>
               <ul class="user-menu">
-                <li class="search-link"><a href="#">Поиск</a></li>
-                <li class="login-link"><a href="#">Вход</a></li>
-                <li class="basket-link"><a href="#">Пусто</a></li>
+                <li class="search-link"><a href="#">Поиск</a>
+                  <!-- Форма поиска -->
+                  <form class="forms search-form" action="#" method="post">
+                    <label class="visually-hidden" for="searching" tabindex="0">Поиск</label>
+                    <input type="search" id="searching" name="search" placeholder="Что ищем?">
+                    <input type="submit" name="search-button">
+                  </form>
+                </li>
+                <li class="login-link"><a href="#">Вход</a>
+                  <!-- Форма входа / регистрации -->
+                  <form class="forms reg-form" action="#" method="post">
+                    <label for="e-mail-reg" class="visually-hidden">e-mail</label>
+                    <input type="email" name="e-mail" placeholder="Электронная почта" id="e-mail-reg">
+                    <label for="pass-reg" class="visually-hidden">Пароль</label>
+                    <input type="password" name="password" id="pass-reg" placeholder="Пароль">
+                    <button class="btn" type="submit" name="login-in">Войти</button>
+                    <div class="login-in-link">
+                      <a href="#">Забыли пароль?</a>
+                      <a href="#">Новая регистрация</a>
+                    </div>
+                  </form>
+                </li>
+                <li class="basket-link"><a href="#">Пусто</a>
+                  <!-- Корзина покупателя -->
+                  <table class="forms basket">
+                    <tr>
+                      <td>
+                        <button type="button" aria-label="Удалить"></button>
+                      </td>
+                      <td><img src="img/ice-cream-1.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом"></td>
+                      <td>Пломбир с апельсиновым джемом</td>
+                      <td>1,5 кг х <span class="basket-price-unit">200 руб.</span></td>
+                      <td>300 руб.</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <button class="close-cross-btn" type="button" aria-label="Удалить"></button>
+                      </td>
+                      <td><img src="img/ice-cream-3.jpg" width="33" height="33" alt="Клубничный пломбир"></td>
+                      <td>Клубничный пломбир с присыпкой  из белого шоколада</td>
+                      <td>1,5 кг х <span class="basket-price-unit">300 руб.</span></td>
+                      <td>450 руб.</td>
+                    </tr>
+                    <tr>
+                      <td class="basket-sum" colspan="5">Итого: 750 руб.</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <button class="btn" type="submit" name="ordering">Оформить заказ</button>
+                      </td>
+                    </tr>
+                  </table>
+                </li>
               </ul>
-
-              <!-- Форма поиска -->
-              <form class="forms search-form" action="#" method="post">
-                <label class="visually-hidden" for="searching" tabindex="0">Поиск</label>
-                <input type="search" id="searching" name="search" placeholder="Что ищем?">
-                <input type="submit" name="search-button">
-              </form>
-
-              <!-- Форма входа / регистрации -->
-              <form class="forms reg-form" action="#" method="post">
-                <label for="e-mail-reg" class="visually-hidden">e-mail</label>
-                <input type="email" name="e-mail" placeholder="Электронная почта" id="e-mail-reg">
-                <label for="pass-reg" class="visually-hidden">Пароль</label>
-                <input type="password" name="password" id="pass-reg" placeholder="Пароль">
-                <button class="btn" type="submit" name="login-in">Войти</button>
-                <div class="login-in-link">
-                  <a href="#">Забыли пароль?</a>
-                  <a href="#">Новая регистрация</a>
-                </div>
-              </form>
-
-              <!-- Корзина покупателя -->
-              <table class="forms basket">
-                <tr>
-                  <td>
-                    <button type="button" aria-label="Удалить"></button>
-                  </td>
-                  <td><img src="img/ice-cream-1.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом"></td>
-                  <td>Пломбир с апельсиновым джемом</td>
-                  <td>1,5 кг х <span class="basket-price-unit">200 руб.</span></td>
-                  <td>300 руб.</td>
-                </tr>
-                <tr>
-                  <td>
-                    <button class="close-cross-btn" type="button" aria-label="Удалить"></button>
-                  </td>
-                  <td><img src="img/ice-cream-3.jpg" width="33" height="33" alt="Клубничный пломбир"></td>
-                  <td>Клубничный пломбир с присыпкой  из белого шоколада</td>
-                  <td>1,5 кг х <span class="basket-price-unit">300 руб.</span></td>
-                  <td>450 руб.</td>
-                </tr>
-                <tr>
-                  <td class="basket-sum" colspan="5">Итого: 750 руб.</td>
-                </tr>
-                <tr>
-                  <td>
-                    <button class="btn" type="submit" name="ordering">Оформить заказ</button>
-                  </td>
-                </tr>
-              </table>
             </section>
           </div>
         </nav>
