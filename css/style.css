@@ -5,12 +5,43 @@ body {
   font-size: 16px;
   line-height: 22px;
   background-color: #849d8f;
+}
+
+.body-index {
   background-image: url("../img/background-1.png");
   background-repeat: no-repeat;
 }
 
 .visually-hidden {
   display: none;
+}
+
+.wrapper {
+  padding-left: 27px;
+  padding-right: 27px;
+  max-width: 1200px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.main-navigation {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.main-navigation img {
+  padding-top: 10px;
+}
+
+.wrapper-navigation {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding-left: 10px;
+}
+
+.site-navigation {
+  padding-left: 10px;
 }
 
 .site-navigation,
@@ -22,6 +53,7 @@ body {
   display: inline-flex;
   flex-wrap: wrap;
 }
+
 .site-navigation-2 li {
   display: block;
 }
@@ -31,6 +63,7 @@ body {
   color: rgb(255, 255, 255);
   line-height: 18px;
   text-align: left;
+  padding-right: 25px;
   list-style: none;
   text-decoration: underline;
   text-decoration-color: rgba(255, 255, 255, 0.2);
@@ -58,10 +91,6 @@ body {
   background-color: #f7f6f3;
 }
 
-/* li:hover .site-navigation-2 {
-  display: block;
-} */
-
 .site-navigation-2 a {
   font-size: 14px;
   font-weight: 400;
@@ -85,25 +114,70 @@ body {
 }
 
 /* пользовательское меню */
-
 .user-menu {
-  display: inline-flex;
+  display: flex;
   list-style: none;
+  min-width: 260px;
+  justify-content: flex-end;
+  padding-left: 0;
 }
 
-.user-menu a {
+.user-menu-link {
+  height: 32px;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.user-menu-link:hover {
+  color: #000000;
+}
+
+.user-menu-link a {
   color: #ffffff;
   font-size: 14px;
   font-weight: 500;
   line-height: 16px;
   text-decoration: none;
-  background-color: rgba(248, 247, 244, 0.2);
 }
 
-.user-menu a:hover {
-  color: #333333;
-  background-color: rgba(248, 247, 244, 1)
+.search-link {
+  width: 32px;
+  text-align: center;
+  border-radius: 50%;
+  background-image: url(../img/loupe.svg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
+
+.search-link:hover {
+  background-color: #f8f7f4;
+  background-image: url(../img/loupe-hover.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.login-link,
+.basket-link {
+  box-sizing: border-box;
+  padding-top: 4px;
+  padding-left: 45px;
+  padding-right: 10px;
+  margin-left: 10px;
+
+}
+.search-form {
+  display: none;
+}
+
+.reg-form {
+  display: none;
+}
+
+.basket {
+  display: none;
+}
+
+
 
 .forms {
   display: flex;
@@ -206,6 +280,11 @@ body {
   font-size: 14px;
   color: #ffffff;
   text-align: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin: 0;
 }
 
 .contact a {
@@ -215,9 +294,40 @@ body {
   text-decoration: none;
 }
 
+/* Сетка на страницe каталога */
+
+.breadcrumbs {
+  display: flex;
+  flex-direction: row;
+  margin-top: -20px;
+  padding: 0;
+  margin-right: 180px;
+}
+
+.page-name {
+  margin: 0;
+  margin-bottom: 25px;
+  padding: 0;
+}
+
+.catalog-filter {
+  display: flex;
+  margin: 0;
+  margin-bottom: 40px;
+}
 
 /* Слайдер фонов */
+/* main */
+.main-slider {
+  display: flex;
+  flex-direction: column;
+}
+
 .main-banner {
+  max-width: 665px;
+  max-height: 880px;
+  margin-top: 490px;
+  margin-bottom: 35px;
   font-size: 60px;
   line-height: 60.35px;
   color: #ffffff;
@@ -244,7 +354,6 @@ body {
   display: flex;
   align-content: space-between;
   flex-wrap: wrap;
-  margin-bottom: 40px;
 }
 
 .discount {
@@ -263,6 +372,7 @@ body {
   border-radius: 20px;
   overflow: hidden;
   padding: 20px;
+  margin-bottom: 40px;
 }
 
 .discount-header {
@@ -370,8 +480,7 @@ body {
 
 .advantages-p-wrapper p {
   width: 40%;
-  flex-grow: 1;
-  flex-shrink: 2;
+
   padding-left: 58px;
 }
 
@@ -379,7 +488,7 @@ body {
   margin-right: 40px;
 }
 
-/* Новинки */
+/* Новинки и рассылка */
 .new-and-mailing {
   display:flex;
   flex-wrap: wrap;
@@ -463,15 +572,42 @@ body {
   margin-left: 10px;
 }
 
-
-
+.form-feedback {
+  display: none;
+}
 
 /* Адрес магазина */
+.location-wrapper {
+  box-sizing: border-box;
+  position: relative;
+  top: -430px;
+  width: 1146px;
+  height: 430px;
+  margin: 0 auto;
+  padding: 60px 0;
+}
+
+.location-pin {
+  position: absolute;
+  left: 205px;
+  top: 150px;
+}
+
 .address {
+  position: absolute;
+  right: 0;
+  box-sizing: border-box;
+  width: 302px;
+  padding: 25px 30px;
+  border-radius: 20px;
   font-size: 14px;
-  line-height: 20px;
   font-style: normal;
   background-color: #fefefe;
+}
+
+.address p:first-child {
+  display:block;
+  margin-top: 0;
 }
 
 .address span {
@@ -480,7 +616,7 @@ body {
   line-height: 24px;
 }
 
-.address a {
+.address .btn {
   text-decoration: none;
 }
 
@@ -499,14 +635,78 @@ body {
 }
 
 /* Футер */
+footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.index-footer {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  min-height: 103px;
+  padding: 20px 0;
+}
+
 .social ul,
 .footer-menu ul {
+  display: flex;
   list-style: none;
+  margin: 0;
+}
+
+.social ul {
+  flex-direction: row;
+  align-items: center;
+  min-width: 190px;
+  padding: 0;
+}
+
+
+.social li {
+  margin-right: auto;
+  padding: 0;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 3px solid rgba(255, 255, 255, 0.5);
+}
+.social a {
+  opacity: 0.8;
+}
+
+
+.social li:hover {
+  border-color: rgba(255, 255, 255, 0.7);
+}
+.social a:hover {
+  opacity: 1;
+}
+
+.social li:active {
+  border-color: rgba(255, 255, 255, 0.7);
+  box-shadow: inset 0 3px 10px rgba(136, 136, 136, 0.7);
+}
+.social a:active {
+  opacity: 1;
+}
+
+.footer-menu ul {
+
+  width: 320px;
+  flex-wrap: wrap;
+  align-content: flex-end;
+  padding: 0;
+  padding-left: 20px;
+}
+
+.footer-menu li {
+  min-width: 155px;
 }
 
 .footer-menu a {
   font-size: 13px;
-  font-weight: 200;
+  font-weight: 100;
   color: #ffffff;
   line-height: 18px;
   text-align: left;
@@ -524,6 +724,7 @@ body {
   font-size: 12px;
   line-height: 18px;
   color: #ffffff;
+  margin: 0;
 }
 
 /* Стили каталога */
@@ -531,6 +732,7 @@ body {
   font-size: 14px;
   line-height: 16px;
   list-style: none;
+  padding-right: 20px;
 }
 
 .breadcrumbs a {
@@ -579,141 +781,16 @@ body {
 /* Сетка сайта */
 /* Главная */
 /* header */
-.wrapper {
-  padding-left: 27px;
-  padding-right: 27px;
-  max-width: 1200px;
-  box-sizing: border-box;
-  margin: 0 auto;
-}
-
-.main-navigation {
-  display: flex;
-  justify-content: flex-start;
-}
-
-.main-navigation img {
-  padding-top: 10px;
-}
-
-.wrapper-navigation {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  padding-left: 10px;
-}
-
-.site-navigation {
-  margin: 0;
-  padding: 0;
-  padding-left: 10px;
-}
-
-.user-menu {
-  min-width: 260px;
-  margin: 0;
-  padding: 0;
-  justify-content: flex-end;
-}
-
-.contact {
-  position: relative;
-  z-index: 5;
-  margin: 0;
-  padding: 0;
-}
-
-.search-form {
-  display: none;
-}
-
-.reg-form {
-  display: none;
-}
-
-.basket {
-  display: none;
-}
-
-.form-feedback {
-  display: none;
-}
-
-/* main */
-.main-slider {
-  display: flex;
-  flex-direction: column;
-}
-
-.main-banner {
-  max-width: 665px;
-  max-height: 880px;
-  margin-top: 490px;
-  margin-bottom: 35px;
-}
 
 
 
 
-.location {
-  display: block;
-  position: relative;
-  margin: 0;
-  margin-bottom: 18px;
-  z-index: 0;
-}
 
-.address {
-  position: absolute;
-  top: 0;
-  right: 0;
-  max-width: 302px;
-  margin: 0;
-}
 
-.location img {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
 
-.index-footer {
-  display: flex;
-  justify-content: space-between;
-}
 
-/* Сетка на страницк каталога */
 
-.catalog-header-bottom {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  margin: 0;
-  margin-bottom: 12px;
-}
 
-.breadcrumbs {
-  display: inline-flex;
-  margin: 0;
-  padding: 0;
-}
-
-.catalog-contact {
-  margin: 0;
-  padding: 0;
-}
-
-.page-name {
-  margin: 0;
-  margin-bottom: 25px;
-  padding: 0;
-}
-
-.catalog-filter {
-  display: flex;
-  margin: 0;
-  margin-bottom: 40px;
-}
 
 .pagination-list {
   display: flex;
