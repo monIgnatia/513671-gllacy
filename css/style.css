@@ -8,8 +8,7 @@ body {
 }
 
 .body-index {
-  background-image: url("../img/background-1.png");
-  background-repeat: no-repeat;
+  min-width: 1200px;
 }
 
 .visually-hidden {
@@ -304,12 +303,6 @@ body {
   margin-right: 180px;
 }
 
-.page-name {
-  margin: 0;
-  margin-bottom: 25px;
-  padding: 0;
-}
-
 .catalog-filter {
   display: flex;
   margin: 0;
@@ -580,17 +573,9 @@ body {
 .location-wrapper {
   box-sizing: border-box;
   position: relative;
-  top: -430px;
+  top: -360px;
   width: 1146px;
-  height: 430px;
   margin: 0 auto;
-  padding: 60px 0;
-}
-
-.location-pin {
-  position: absolute;
-  left: 205px;
-  top: 150px;
 }
 
 .address {
@@ -747,6 +732,7 @@ footer {
 }
 
 .page-name {
+  margin-bottom: 25px;
   font-size: 35px;
   color: #ffffff;
   font-weight: bold;
@@ -777,20 +763,6 @@ footer {
   color: #ffffff;
   text-decoration: none;
 }
-
-/* Сетка сайта */
-/* Главная */
-/* header */
-
-
-
-
-
-
-
-
-
-
 
 .pagination-list {
   display: flex;
