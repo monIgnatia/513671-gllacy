@@ -105,33 +105,48 @@
         <h1 class="page-name">Сливочное мороженое</h1>
 
         <form class="catalog-filter" action="#" method="post">
-          <p>Сортировка:</p>
-          <select name="sort" id="sort">
-            <option value="popular" selected>по популярности</option>
-            <option value="low-cost-first">сначала недорогие</option>
-            <option value="high-cost-first">сначала дорогие</option>
-            <option value="fatness">по жирности</option>
-          </select>
-          <p>
-            <span>Цена:</span>
-            <input type="text" value=100 name="min-price">
-            <span>руб. - </span>
-            <input type="text" value=500 name="max-price">
-            <span>руб.</span>
-          </p>
-          <p>Жирность:</p>
-          <label><input type="radio" name="fatness" value="0%"><span>0%</span></label>
-          <label><input type="radio" name="fatness" value="<10%" checked><span>до 10%</span></label>
-          <label><input type="radio" name="fatness" value=">10%"><span>до 30%</span></label>
-          <label><input type="radio" name="fatness" value=">30%"><span>выше 30%</span></label>
+          <div class="catalog-filter-wrapper">
+            <span>Сортировка:</span>
+            <div class="catalog-filter-item">
+              <select class="catalog-filter-item" name="sort" id="sort">
+                <option value="popular" selected>по популярности</option>
+                <option value="low-cost-first">сначала недорогие</option>
+                <option value="high-cost-first">сначала дорогие</option>
+                <option value="fatness">по жирности</option>
+              </select>
+            </div>
+          </div>
+          <div class="catalog-filter-wrapper">
+            <span>Цена:
+              <input type="text" value=100 name="min-price">
+              <span>руб. - </span>
+              <input type="text" value=500 name="max-price">
+              <span>руб.</span>
+            </span>
+            <div class="catalog-filter-item catalog-filter-range">
+            </div>
+          </div>
+          <div class="catalog-filter-wrapper">
+            <span>Жирность:</span>
+            <div class="catalog-filter-item">
+              <label><input type="radio" name="fatness" value="0%"><span>0%</span></label>
+              <label><input type="radio" name="fatness" value="<10%" checked><span>до 10%</span></label>
+              <label><input type="radio" name="fatness" value=">10%"><span>до 30%</span></label>
+              <label><input type="radio" name="fatness" value=">30%"><span>выше 30%</span></label>
+            </div>
+          </div>
+          <div class="catalog-filter-wrapper">
+            <span>Наполнители:</span>
+            <div class="catalog-filter-item">
+              <label><input type="checkbox" name="stuffing" value="chocolate" checked><span>шоколадные</span></label>
+              <label><input type="checkbox" name="stuffing" value="sugar" checked><span>сахарные присыпки</span></label>
+              <label><input type="checkbox" name="stuffing" value="fruit"><span>фрукты</span></label>
+              <label><input type="checkbox" name="stuffing" value="syrups"><span>сиропы</span></label>
+              <label><input type="checkbox" name="stuffing" value="jams"><span>джемы</span></label>
+            </div>
+          </div>
 
-          <p>Наполнители:</p>
-          <label><input type="checkbox" name="stuffing" value="chocolate" checked><span>шоколадные</span></label>
-          <label><input type="checkbox" name="stuffing" value="sugar" checked><span>сахарные присыпки</span></label>
-          <label><input type="checkbox" name="stuffing" value="fruit"><span>фрукты</span></label>
-          <label><input type="checkbox" name="stuffing" value="syrups"><span>сиропы</span></label>
-          <label><input type="checkbox" name="stuffing" value="jams"><span>джемы</span></label>
-          <button  class="catalog-filter-submit" type="submit" name="filter">Применить</button>
+          <button class="catalog-filter-wrapper catalog-filter-item catalog-filter-btn" type="submit" name="filter">Применить</button>
         </form>
 
         <section class="features">
@@ -247,7 +262,7 @@
 
         <section class="pagination">
           <ul class="pagination-list">
-            <li><a href="#">1</a></li>
+            <li class="pagination-open"><a href="#">1</a></li>
             <li><a href="#">2</a></li>
             <li><a href="#">3</a></li>
             <li><a href="#">4</a></li>
