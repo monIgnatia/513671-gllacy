@@ -7,10 +7,6 @@ body {
   background-color: #849d8f;
 }
 
-.body-index {
-  min-width: 1200px;
-}
-
 .visually-hidden {
   display: none;
 }
@@ -21,7 +17,34 @@ body {
   max-width: 1200px;
   box-sizing: border-box;
   margin: 0 auto;
+  background-image: url("../img/background-1.png");
+  background-repeat: no-repeat;
+  background-position: top center;
 }
+
+/* Слайдер фонов */
+/* main */
+.main-slider {
+  display: flex;
+  flex-direction: column;
+}
+
+.slider-list {
+  list-style: none;
+}
+
+.main-slider-title {
+  max-width: 665px;
+  max-height: 880px;
+  margin-top: 490px;
+  margin-bottom: 35px;
+  font-size: 60px;
+  line-height: 60.35px;
+  color: #ffffff;
+  text-align: center;
+}
+
+
 
 .main-navigation {
   display: flex;
@@ -246,6 +269,20 @@ li:hover .site-navigation-2  {
   box-shadow: inset 0px 1px 2px 0px #ac1000;
 }
 
+.btn-big {
+  font-size: 32px;
+  line-height: 44px;
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
+  text-decoration: none;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-bottom: 40px;
+  border-radius: 40px;
+}
+
 .login-in-link a {
   font-size: 13px;
   line-height: 24px;
@@ -335,38 +372,6 @@ li:hover .site-navigation-2  {
 
 .breadcrumbs-open a {
   text-decoration: none;
-}
-
-/* Слайдер фонов */
-/* main */
-.main-slider {
-  display: flex;
-  flex-direction: column;
-}
-
-.main-banner {
-  max-width: 665px;
-  max-height: 880px;
-  margin-top: 490px;
-  margin-bottom: 35px;
-  font-size: 60px;
-  line-height: 60.35px;
-  color: #ffffff;
-  text-align: center;
-}
-
-.btn-big {
-  font-size: 32px;
-  line-height: 44px;
-  color: #ffffff;
-  font-weight: bold;
-  text-align: center;
-  text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
-  text-decoration: none;
-  padding-left: 40px;
-  padding-right: 40px;
-  margin-bottom: 40px;
-  border-radius: 40px;
 }
 
 .catalog-filter {
@@ -671,6 +676,13 @@ li:hover .site-navigation-2  {
   top: -360px;
   width: 1146px;
   margin: 0 auto;
+}
+
+.location {
+  min-height: 430px;
+  position: relative;
+  background-image: url(../img/map.jpg);
+  background-repeat: no-repeat;
 }
 
 .address {

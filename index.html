@@ -7,9 +7,11 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Глейси</title>
   </head>
-  <body class="body-index">
+  <body>
+    
     <header class="main-header">
       <div class="wrapper">
+
         <nav class="main-navigation">
           <img src="img/logo.svg" alt="Логотип Gllacy-shop" width="154" height="64">
           <div class="wrapper-navigation">
@@ -70,12 +72,36 @@
 
         <!-- Слайдер фонов -->
         <section class="main-slider">
-          <p class="main-banner">
-            Крем-брюле и пломбир с малиновым джемом
-          </p>
-          <a class="btn btn-big" href="#">Давайте оба!</a>
           <!-- Контрольки слайдера -->
-          <div class="control"></div>
+          <div class="slider-control">
+            <label for="product-1">Первый</label>
+            <label for="product-2">Второй</label>
+            <label for="product-3">Третий</label>
+          </div>
+          </div>
+
+          <ul class="slider-list">
+            <li>
+              <h3 class="main-slider-title slide" id="slide-1">
+                Крем-брюле и пломбир с малиновым джемом
+              </h3>
+              <a class="btn btn-big" href="#">Давайте оба!</a>
+            </li>
+            <li>
+              <h3 class="main-slider-title slide" id="slide-2">
+                Шоколадный пломбир и лимонный сорбет
+              </h3>
+              <a class="btn btn-big" href="#">Давайте оба!</a>
+            </li>
+            <li>
+              <h3 class="main-slider-title slide" id="slide-3">
+                Пломбир с помадкой и клубничный щербет
+              </h3>
+              <a class="btn btn-big" href="#">Давайте оба!</a>
+            </li>
+          </ul>
+
+
         </section>
 
         <div class="discount-wrapper">
@@ -178,9 +204,8 @@
 
         <section class="location">
           <h2 class="visually-hidden">Адрес магазина и главного офиса</h2>
-          <!-- <script class="location-script" type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A9c9d2eaaaf5fc2225bf881da643677779cadca124573772f861d0a1065e27e11&amp;width=100%25&amp;height=430&amp;lang=ru_RU&amp;scroll=true"></script> -->
-
           <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aaa639709fb971b7f475516a145774b03d5393662b3bbc439954eeefb8acb1038&amp;width=100%25&amp;height=430&amp;lang=ru_RU&amp;scroll=true" ></script>
+
           <div class="location-wrapper">
             <address class="address">
               <p>
@@ -194,6 +219,7 @@
               </p>
               <a class="btn" href="#">Форма обратной связи</a>
             </address>
+
           </div>
 
           <!-- Форма обратной связи -->
