@@ -171,7 +171,7 @@ body {
   padding-top: 6px;
   color: #ffffff;
   background-color: #d07058;
-  text-decoration: none;
+  text-decoration-line: none;
 }
 
 .site-navigation-2 {
@@ -199,6 +199,7 @@ li:hover .site-navigation-2  {
 .site-navigation-2 a {
   font-size: 14px;
   color: #333333;
+  text-decoration-line: none;
 }
 
 .site-navigation-2 li:hover {
@@ -229,9 +230,17 @@ li:hover .site-navigation-2  {
 }
 
 .site-nav-2-new,
-.site-nav-2-new a:hover,
-.site-navigation-2 li:hover {
+.site-nav-2-new a:hover {
   font-weight: 700;
+  text-decoration: none;
+}
+
+.site-nav-2-open {
+  background-color: #d07058
+}
+
+.site-nav-2-open a {
+  color: #ffffff;
 }
 
 /* пользовательское меню */
