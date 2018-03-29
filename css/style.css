@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
+  min-width: 1200px;
   font-family: "Roboto", Helvetica, sans-serif;
   font-size: 16px;
   line-height: 22px;
@@ -26,7 +27,6 @@ body {
 }
 
 .site-wrapper {
-
   background-image: url("../img/background-1.png");
   background-repeat: no-repeat;
   background-position: top center;
@@ -41,7 +41,6 @@ body {
   max-width: 1200px;
   box-sizing: border-box;
   margin: 0 auto;
-
 }
 
 /* Слайдер фонов */
@@ -240,14 +239,14 @@ li:hover .site-navigation-2  {
   width: 32px;
   text-align: center;
   border-radius: 50%;
-  background-image: url(../img/loupe.svg);
+  background-image: url("../img/loupe.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .search-link:hover {
   background-color: #f8f7f4;
-  background-image: url(../img/loupe-hover.svg);
+  background-image: url("../img/loupe-hover.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -325,6 +324,7 @@ li:hover .site-navigation-2  {
 .basket-link a:active::before {
   background-image: url("../img/basket-red.svg");
 }
+
 .search-form {
   display: none;
 }
@@ -589,12 +589,12 @@ li:hover .site-navigation-2  {
 .discount-rasp {
   margin-right: 40px;
   background-color: #a6093a;
-  background-image: url(../img/raspberry.jpg);
+  background-image: url("../img/raspberry.jpg");
 }
 
 .discount-choc {
   background-color: #54301d;
-  background-image: url(../img/chocolate.jpg);
+  background-image: url("../img/chocolate.jpg");
 }
 
 .discount .btn {
@@ -621,7 +621,7 @@ li:hover .site-navigation-2  {
   width: 267px;
   box-sizing: border-box;
   position: relative;
-  margin-bottom: 30px;
+  margin-bottom: 35px;
   margin-right: 26px;
   color: #ffffff;
 }
@@ -635,7 +635,7 @@ li:hover .site-navigation-2  {
   width: 60px;
   height: 60px;
   position: absolute;
-  background-image: url(../img/hit.svg);
+  background-image: url("../img/hit.svg");
   z-index: 3;
 }
 
@@ -731,17 +731,41 @@ li:hover .site-navigation-2  {
 
 .advantages-p-wrapper {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
 }
 
 .advantages-p-wrapper p {
-  width: 40%;
-  padding-left: 58px;
+  max-width: 40%;
+  position: relative;
+  margin-left: 60px;
 }
 
-.advantages-p-wrapper p:nth-child(odd) {
-  margin-right: 40px;
+.advantages-p-wrapper p::before {
+  content: "";
+  position: absolute;
+  left: -60px;
+  width: 50px;
+  height: 50px;
+  padding-right: 10px;
+  padding-bottom: 40px;
+  background-repeat: no-repeat;
+}
+
+.advantages-p-wrapper p:first-child::before {
+  background-image: url("../img/ice-cream.svg");
+}
+
+.advantages-p-wrapper p:nth-child(2)::before {
+  background-image: url("../img/cow.svg");
+}
+
+.advantages-p-wrapper p:nth-child(3)::before {
+  background-image: url("../img/eco.svg");
+}
+
+.advantages-p-wrapper p:nth-child(4)::before {
+  background-image: url("../img/thermometer.svg");
 }
 
 /* Новинки и рассылка */
@@ -763,7 +787,7 @@ li:hover .site-navigation-2  {
   flex-grow: 1;
   color: #323232;
   background-color: #ffffff;
-  background-image: url(../img/ham-and-strawberry.png);
+  background-image: url("../img/ham-and-strawberry.png");
   background-repeat: no-repeat;
   background-position: top -30px right -20px;
   border-radius: 20px;
@@ -773,7 +797,9 @@ li:hover .site-navigation-2  {
 
 .new p {
   display: block;
+  max-width: 60%;
   margin: 0;
+  margin-bottom: 10px;
 }
 
 .new a {
@@ -845,7 +871,7 @@ li:hover .site-navigation-2  {
 .location {
   min-height: 430px;
   position: relative;
-  background-image: url(../img/map.jpg);
+  background-image: url("../img/map.jpg");
   background-repeat: no-repeat;
 }
 
@@ -946,11 +972,25 @@ li:hover .site-navigation-2  {
 }
 
 .footer-menu ul {
+  position: relative;
   width: 320px;
   flex-wrap: wrap;
   align-content: flex-start;
   padding: 0;
-  padding-left: 20px;
+}
+
+.footer-menu ul::before {
+  content: "";
+  position: absolute;
+  left: -20px;
+  top: 6px;
+  width: 10px;
+  height: 6px;
+  height: 15px;
+  padding-right: 10px;
+  padding-bottom: 40px;
+  background-image: url("../img/heart.svg");
+  background-repeat: no-repeat;
 }
 
 .footer-menu li {
@@ -971,6 +1011,8 @@ li:hover .site-navigation-2  {
 .footer-menu span {
   font-weight: 600;
 }
+
+
 
 .copyright p,
 .copyright a {
