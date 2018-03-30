@@ -55,6 +55,7 @@ body {
 .main-slider {
   display: flex;
   flex-direction: column;
+  position: relative;
   color: #ffffff;
 }
 
@@ -81,7 +82,7 @@ body {
 
 .slider-controls {
   position: absolute;
-  bottom: 60px;
+  bottom: 70px;
   z-index: 20;
   font-size: 0;
 }
@@ -289,7 +290,7 @@ li:hover .site-navigation-2  {
   text-decoration: none;
 }
 
-.user-menu-link a:hover {
+.user-menu-link:hover a {
   color: #000000;
 }
 
@@ -313,8 +314,8 @@ li:hover .site-navigation-2  {
   background-repeat: no-repeat;
 }
 
-.login-link a:hover::before,
-.login-link a:active::before {
+.login-link:hover a::before,
+.login-link:active a::before {
   background-image: url("../img/entrance-hover.svg");
 }
 
@@ -329,8 +330,8 @@ li:hover .site-navigation-2  {
   background-repeat: no-repeat;
 }
 
-.basket-link a:hover::before,
-.basket-link a:active::before {
+.basket-link:hover a::before,
+.basket-link:active a::before {
   background-image: url("../img/basket-red.svg");
 }
 
@@ -491,14 +492,18 @@ li:hover .site-navigation-2  {
 }
 
 .breadcrumbs a:hover,
-.breadcrumbs a:active {
+.breadcrumbs a:active,
+.feature-name:hover,
+.feature-name:active {
   color: #ffbc9e;
+  text-decoration-color: rgba(255, 188, 158, 0.5);
 }
 
 .breadcrumbs-open a {
   text-decoration: none;
 }
 
+/* Фильтр каталога */
 .catalog-filter {
   display: flex;
   flex-wrap: wrap;
@@ -518,6 +523,7 @@ li:hover .site-navigation-2  {
 }
 
 .catalog-filter-item {
+  position: relative;
   color: #ffffff;
   font-size: 16px;
   padding: 8px 20px;
@@ -530,19 +536,151 @@ li:hover .site-navigation-2  {
   width: 35px;
 }
 
-.catalog-filter-range {
-  width: 220px;
-  height: 36px;
-  padding: 0 20px;
+.catalog-filter-price {
+  padding-left: 0;
 }
 
-.catalog-filter-wrapper > span {
+.catalog-filter-range {
+  position: relative;
+  margin: auto;
+  margin-top: 2px;
+  border-radius: 20px;
+  width: 220px;
+  padding-top: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-bottom: 18px;
+  background: rgba( 255, 255, 255, .2);
+}
+
+.scale {
+  height: 4px;
+  background-color: rgba(248, 247, 244, 0.5);
+}
+
+.complete-scale {
+  width: 98px;
+  margin-left: 37px;
+  height: 4px;
+  background-color: rgba(248, 247, 244, 1);
+}
+
+.switcher {
+  position: absolute;
+  top: 8px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: rgba(248, 247, 244, 1);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1);
+  display: flex;
+  transition: all .05s linear;
+}
+
+.switcher::after {
+  content: '';
+  display: block;
+  width: 4px;
+  height: 4px;
+  background: #ababab;
+  margin: auto;
+}
+
+.switcher-min {
+  left: 34px;
+}
+
+.switcher-max {
+  left: 134px;
+}
+
+.switcher:hover {
+  width: 24px;
+  height: 24px;
+  top: 6px;
+}
+
+.switcher-min:hover {
+  left: 32px;
+}
+
+.switcher-max:hover {
+  left: 132px;
+}
+
+
+
+
+
+
+
+
+
+
+.catalog-filter-wrapper span {
   padding-left: 20px;
 }
 
+.catalog-filter-price,
 .catalog-filter p {
   font-size: 14px;
   line-height: 18px;
+}
+
+.catalog-filter-radio,
+.catalog-filter-checkbox {
+  position: relative;
+  padding-left: 10px;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.catalog-filter-checkbox {
+  padding-left: 20px;
+}
+.catalog-filter-radio::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 22px;
+  height: 22px;
+  background-image: url("../img/radio-off.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.8;
+}
+
+.catalog-filter-checkbox::before {
+  content: "";
+  position: absolute;
+  left: 10px;
+
+  width: 25px;
+  height: 23px;
+  background-image: url("../img/checkbox-off.svg");
+  background-repeat: no-repeat;
+  opacity: 0.8;
+}
+
+.catalog-filter-radio:hover,
+.catalog-filter-checkbox:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+.catalog-filter-radio:hover::before,
+.catalog-filter-checkbox:hover::before {
+  opacity: 1;
+}
+
+.catalog-filter-checkbox input[type="checkbox"]:checked {
+  content: "";
+  position: absolute;
+  left: 15px;
+  width: 25px;
+  height: 23px;
+  background-image: url("../img/checkbox-on.svg");
 }
 
 .catalog-filter-btn {
@@ -692,6 +830,7 @@ li:hover .site-navigation-2  {
 }
 
 .feature-name {
+  color: #ffffff;
   text-align: center;
   text-decoration: underline;
   text-decoration-color: rgba(255, 255, 255, 0.2);
@@ -1021,8 +1160,6 @@ li:hover .site-navigation-2  {
   font-weight: 600;
 }
 
-
-
 .copyright p,
 .copyright a {
   font-size: 12px;
@@ -1032,7 +1169,6 @@ li:hover .site-navigation-2  {
 }
 
 /* Стили каталога */
-
 .page-name {
   margin-bottom: 25px;
   font-size: 35px;
@@ -1046,6 +1182,7 @@ li:hover .site-navigation-2  {
   display: flex;
   justify-content: flex-end;
   list-style: none;
+  margin-top: 60px;
 }
 
 .pagination li {
