@@ -8,6 +8,9 @@
     <title>Глейси</title>
   </head>
   <body>
+    <div class="feedback-darkness">
+    <!-- фон для окна обратной связи   -->
+    </div>
     <input class="hidden-radio" type="radio" id="product-1" name="toggle" checked>
     <input class="hidden-radio" type="radio" id="product-2" name="toggle">
     <input class="hidden-radio" type="radio" id="product-3" name="toggle">
@@ -37,15 +40,15 @@
                 <ul class="user-menu">
                   <li class="user-menu-link search-link"><a href="#"></a>
                     <!-- Форма поиска -->
-                    <!-- <form class="forms search-form" action="#" method="post">
+                    <form class="forms search-form" action="#" method="post">
                       <label class="visually-hidden" for="searching" tabindex="0">Поиск</label>
                       <input type="search" id="searching" name="search" placeholder="Что ищем?">
-                      <input type="submit" name="search-button">
-                    </form> -->
+                      <input class="visually-hidden" type="submit" name="search-button">
+                    </form>
                   </li>
                   <li class="user-menu-link login-link"><a href="#">Вход</a>
                     <!-- Форма входа / регистрации -->
-                    <!-- <form class="forms reg-form" action="#" method="post">
+                    <form class="forms reg-form" action="#" method="post">
                       <label for="e-mail-reg" class="visually-hidden">e-mail</label>
                       <input type="email" name="e-mail" placeholder="Электронная почта" id="e-mail-reg">
                       <label for="pass-reg" class="visually-hidden">Пароль</label>
@@ -55,7 +58,7 @@
                         <a href="#">Забыли пароль?</a>
                         <a href="#">Новая регистрация</a>
                       </div>
-                    </form> -->
+                    </form>
                   </li>
                   <li class="user-menu-link basket-link"><a href="#">Пусто</a></li>
                 </ul>
@@ -217,38 +220,38 @@
         </div>
 
         <section class="location">
-            <h2 class="visually-hidden">Адрес магазина и главного офиса</h2>
-            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aaa639709fb971b7f475516a145774b03d5393662b3bbc439954eeefb8acb1038&amp;width=100%25&amp;height=430&amp;lang=ru_RU&amp;scroll=true" ></script>
+          <h2 class="visually-hidden">Адрес магазина и главного офиса</h2>
+          <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aaa639709fb971b7f475516a145774b03d5393662b3bbc439954eeefb8acb1038&amp;width=100%25&amp;height=430&amp;lang=ru_RU&amp;scroll=true" ></script>
 
-            <div class="location-wrapper">
-              <address class="address">
-                <p>
-                  Адрес главного офиса<br> и офлайн-магазина:<br>
-                  <span>ул. Большая Конюшенная 19/8, Санкт-Петербург</span>
-                </p>
-                <p>
-                  Для заказов по телефону:<br>
-                  <span>8 812 450-25-25</span><br>
-                  (с 10 до 20 ежедневно)
-                </p>
-                <a class="btn" href="#">Форма обратной связи</a>
-              </address>
+          <div class="location-wrapper">
+            <address class="address">
+              <p>
+                Адрес главного офиса<br> и офлайн-магазина:<br>
+                <span>ул. Большая Конюшенная 19/8, Санкт-Петербург</span>
+              </p>
+              <p>
+                Для заказов по телефону:<br>
+                <span>8 812 450-25-25</span><br>
+                (с 10 до 20 ежедневно)
+              </p>
+              <a class="btn" href="#">Форма обратной связи</a>
+            </address>
 
-            </div>
+          </div>
 
-            <!-- Форма обратной связи -->
-            <form class="forms form-feedback" name="form-feedback" action="#" method="post">
-              <span>Мы обязательно вам ответим!</span>
-              <button class="close-cross-btn" type="button" name="close-feedback" aria-label="Закрыть"></button>
-              <label for="name-feedback" class="visually-hidden">Как Вас зовут?</label>
-              <input type="text" name="name" id="name-feedback" placeholder="Как Вас зовут?">
-              <label for="email-feedback" class="visually-hidden">Ваша почта для ответа</label>
-              <input type="email" name="e-mail" id="email-feedback" placeholder="Ваша почта для ответа?">
-              <label for="text-feedback" class="visually-hidden">Напишите сюда что-нибудь</label>
-              <textarea name="textbox" id="text-feedback" rows="8" cols="80" placeholder="Напишите что-нибудь..."></textarea>
-              <button class="btn" type="submit" name="response">Отправить</button>
-            </form>
-          </section>
+          <!-- Форма обратной связи -->
+          <form class="forms form-feedback" name="form-feedback" action="#" method="post">
+            <span>Мы обязательно вам ответим!</span>
+            <button class="close-cross-btn" type="button" name="close-feedback" aria-label="Закрыть"></button>
+            <label for="name-feedback" class="visually-hidden">Как Вас зовут?</label>
+            <input type="text" name="name" id="name-feedback" placeholder="Как Вас зовут?">
+            <label for="email-feedback" class="visually-hidden">Ваша почта для ответа</label>
+            <input type="email" name="e-mail" id="email-feedback" placeholder="Ваша почта для ответа?">
+            <label for="text-feedback" class="visually-hidden">Напишите сюда что-нибудь</label>
+            <textarea name="textbox" id="text-feedback" rows="6" cols="80" placeholder="Напишите что-нибудь..."></textarea>
+            <button class="btn" type="submit" name="response">Отправить</button>
+          </form>
+        </section>
       </main>
 
       <footer>
