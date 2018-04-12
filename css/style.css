@@ -255,9 +255,9 @@ li:hover .site-navigation-2  {
 
 /* Пользовательское меню */
 .forms.search-form,
+/* .forms.form-feedback, */
 .forms.reg-form,
-.forms.basket,
-.forms.form-feedback {
+.forms.basket  {
   display: none;
 }
 
@@ -274,7 +274,6 @@ li:hover .site-navigation-2  {
   min-height: 32px;
   border-radius: 20px;
   background-color: rgba(255, 255, 255, 0.2);
-
 }
 
 .user-menu-link:hover {
@@ -380,9 +379,9 @@ li:hover .site-navigation-2  {
 .search-link:active .search-form  {
   display: block;
   position: absolute;
-  padding: 20px 15px;
-  top: 40px;
-  left: -284px;
+  padding: 19px 12px;
+  top: 38px;
+  right: 0;
   z-index: 5;
 }
 
@@ -398,7 +397,7 @@ li:hover .site-navigation-2  {
 
 .search-form input[type="search"] {
   width: 315px;
-  height: 48px;
+  height: 44px;
   border: 1px solid rgb(211, 211, 210);
   border-radius: 5px;
 }
@@ -410,7 +409,7 @@ li:hover .site-navigation-2  {
   flex-wrap: wrap;
   position: absolute;
   padding: 20px 15px;
-  top: 40px;
+  top: 37px;
   right: 0;
   z-index: 6;
 }
@@ -421,23 +420,26 @@ li:hover .site-navigation-2  {
   position: absolute;
   top: -10px;
   right: 0;
-  width: 70px;
+  width: 90px;
   height: 10px;
   margin: 0;
 }
 
 .reg-form input {
-  width: 240px;
+  width: 225px;
   border: 1px solid rgb(211, 211, 210);
   border-radius: 5px;
-  margin-bottom: 20px;
+  margin-bottom: 17px;
 }
 
 .search-form input[placeholder],
 .reg-form input[placeholder] {
-  padding: 15px;
+  padding: 9px;
 }
 
+.reg-form .btn {
+  padding: 10px 24px;
+}
 /* Формы */
 .forms {
   display: flex;
@@ -489,11 +491,14 @@ li:hover .site-navigation-2  {
 
 .basket-link-red:hover .basket {
   display: block;
-  width: 540px;
+  width: 504px;
   position: absolute;
-  top: 40px;
+  top: 37px;
   right: 0;
-  padding: 15px;
+  padding-top: 17px;
+  padding-right: 26px;
+  padding-bottom: 20px;
+  padding-left: 9px;
   z-index: 7;
 }
 
@@ -503,12 +508,12 @@ li:hover .site-navigation-2  {
   position: absolute;
   top: -10px;
   right: 0;
-  width: 110px;
+  width: 116px;
   height: 10px;
 }
 
 .basket td {
-  padding: 5px 10px;
+  padding: 5px 5px;
 }
 
 .basket td:first-child {
@@ -516,11 +521,11 @@ li:hover .site-navigation-2  {
 }
 
 .basket td:nth-child(3) {
-  width: 216px;
+  width: 245px;
 }
 
 .basket td:nth-child(4) {
-  padding: 5px 15px;
+  padding: 5px 10px;
 }
 
 .basket td:last-child {
@@ -544,13 +549,13 @@ li:hover .site-navigation-2  {
   text-align: right;
 }
 
-.basket button {
+.basket .btn {
   box-shadow: 0px 1px 2px 0px rgba(172, 16, 0, 0.004);
+  padding: 10px 15px;
 }
 
 .close-cross-btn {
   display: block;
-  position: absolute;
   width: 12px;
   height: 12px;
   background-color: #f8f7f4;
@@ -558,10 +563,6 @@ li:hover .site-navigation-2  {
   background-image: url("../img/cross-small.svg");
   background-repeat: no-repeat;
   border: 0;
-}
-
-.close-cross-btn:hover {
-
 }
 
 /* Кнопки и ссылки в виде кнопок */
@@ -1081,12 +1082,12 @@ li:hover .site-navigation-2  {
 .feature-item-footer {
   position: absolute;
   display: none;
-  bottom: -74px;
+  bottom: -68px;
   left: -13px;
   right: -13px;
   background: rgba(255, 255, 255, .3);
-  padding: 20px 45px;
-  padding-top: 10px;
+  padding: 22px 45px;
+  padding-top: 2px;
   box-sizing: border-box;
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
@@ -1310,31 +1311,33 @@ li:hover .site-navigation-2  {
 .form-feedback {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  width: 480px;
-  min-height: 442px;
   position: fixed;
-  left: 30%;;
-  top: 337px;
+  left: 34%;;
+  top: 350px;
   z-index: 21;
   box-sizing: border-box;
-  padding: 23px;
-  margin: auto;
+  padding-left: 23px;
+  padding-right: 23px;
+  padding-bottom: 23px;
+  padding-top: 17px;
   border-radius: 20px;
 }
 
 .form-feedback .close-cross-btn {
   position: absolute;
-  top: 20px;
-  right: 20px;
+  background-image: url(../img/cross-big.svg);
+  width: 20px;
+  height: 20px;
+  top: 15px;
+  right: 15px;
 }
 
 .form-feedback input {
   box-sizing: border-box;
-  width: 260px;
+  width: 270px;
   height: 42px;
   padding: 10px 15px;
-  margin: 10px 0;
+  margin-bottom: 20px;
   font-size: 16px;
 }
 
@@ -1344,7 +1347,6 @@ li:hover .site-navigation-2  {
   font-size: 16px;
   line-height: 24px;
   padding: 10px;
-  margin: 10px 0;
   margin-bottom: 20px;
   border-radius: 6px;
   border: 1px solid #d3d3d2;
@@ -1354,6 +1356,7 @@ li:hover .site-navigation-2  {
   font-size: 24px;
   line-height: 28px;
   color: #323232;
+  margin-bottom: 18px;
 }
 
 .form-feedback .btn {
