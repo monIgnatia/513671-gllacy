@@ -8,7 +8,7 @@
     <title>Каталог</title>
   </head>
   <body>
-    <header class="main-header">
+    <header>
       <div class="wrapper">
         <nav class="main-navigation">
           <a href="index.html"><img src="img/logo.svg" alt="Логотип Gllacy-shop" width="154" height="64"></a>
@@ -24,7 +24,7 @@
                 </ul>
               </li>
               <li><a href="delivery.html">Доставка и оплата</a></li>
-              <li><a href="about.html">О компании</a></li>
+              <li><a href="about.html">О Компании</a></li>
             </ul>
 
             <section>
@@ -51,7 +51,7 @@
                     </div>
                   </form>
                 </li>
-                <li class="user-menu-link basket-link-red"><a href="#">2 товара</a>
+                <li class="user-menu-link basket-link basket-link-red"><a href="#">2 товара</a>
                   <!-- Корзина покупателя -->
                   <table class="forms basket">
                     <tr>
@@ -122,7 +122,7 @@
               <span class="filter-title">Цена:
                 <input type="text" value=100 name="min-price">
               </span>
-              <span>руб.-</span>
+              <span>руб.—</span>
               <input type="text" value=500 name="max-price">
               <span>руб.</span>
             </div>
@@ -137,7 +137,7 @@
 
           <div class="catalog-filter-wrapper">
             <span class="filter-title">Жирность:</span>
-            <div class="catalog-filter-item">
+            <div class="catalog-filter-item catalog-filter-fatness">
               <label class="catalog-filter-radio">
               <input class="visually-hidden" type="radio" name="fatness" value="0%"><span >0%</span></label>
 
@@ -153,7 +153,7 @@
           </div>
           <div class="catalog-filter-wrapper">
             <span class="filter-title">Наполнители:</span>
-            <div class="catalog-filter-item">
+            <div class="catalog-filter-item catalog-filter-staff">
               <label class="catalog-filter-checkbox">
                 <input class="visually-hidden" type="checkbox" name="stuffing" value="chocolate" checked>
                 <span>шоколадные</span>
@@ -341,12 +341,15 @@
 
         <section class="pagination">
           <ul class="pagination-list">
+            <li><a class="prev" href="#"></a></li>
             <li class="pagination-open"><a href="#">1</a></li>
             <li><a href="#">2</a></li>
             <li><a href="#">3</a></li>
             <li><a href="#">4</a></li>
             <li><a href="#">5</a></li>
+            <li><a class="next" href="#"></a></li>
           </ul>
+
         </section>
       </div>
     </main>
