@@ -8,14 +8,13 @@
     <title>Глейси</title>
   </head>
   <body>
-    <div class="feedback-darkness">
-    <!-- фон для окна обратной связи   -->
-    </div>
+    <div class="feedback-darkness"></div>
     <input class="hidden-radio" type="radio" id="product-1" name="toggle" checked>
     <input class="hidden-radio" type="radio" id="product-2" name="toggle">
     <input class="hidden-radio" type="radio" id="product-3" name="toggle">
 
     <div class="site-wrapper">
+
       <header>
         <div class="wrapper">
 
@@ -244,23 +243,22 @@
               </p>
               <a class="btn" href="#">Форма обратной связи</a>
             </address>
-
           </div>
-
-          <!-- Форма обратной связи -->
-          <form class="forms form-feedback" name="form-feedback" action="#" method="post">
-            <span>Мы обязательно вам ответим!</span>
-            <button class="close-cross-btn" type="button" name="close-feedback" aria-label="Закрыть"></button>
-            <label for="name-feedback" class="visually-hidden">Как Вас зовут?</label>
-            <input type="text" name="name" id="name-feedback" placeholder="Как Вас зовут?">
-            <label for="email-feedback" class="visually-hidden">Ваша почта для ответа</label>
-            <input type="email" name="e-mail" id="email-feedback" placeholder="Ваша почта для ответа?">
-            <label for="text-feedback" class="visually-hidden">Напишите сюда что-нибудь</label>
-            <textarea name="textbox" id="text-feedback" rows="6" cols="80" placeholder="Напишите что-нибудь..."></textarea>
-            <button class="btn" type="submit" name="response">Отправить</button>
-          </form>
         </section>
       </main>
+
+      <!-- Форма обратной связи -->
+      <form class="forms form-feedback" name="form-feedback" action="#" method="post">
+        <span>Мы обязательно вам ответим!</span>
+        <button class="close-cross-btn" type="button" name="close-feedback" aria-label="Закрыть"></button>
+        <label for="name-feedback" class="visually-hidden">Как Вас зовут?</label>
+        <input type="text" name="name" id="name-feedback" placeholder="Как Вас зовут?">
+        <label for="email-feedback" class="visually-hidden">Ваша почта для ответа</label>
+        <input type="email" name="e-mail" id="email-feedback" placeholder="Ваша почта для ответа?">
+        <label for="text-feedback" class="visually-hidden">Напишите сюда что-нибудь</label>
+        <textarea name="textbox" id="text-feedback" rows="6" cols="80" placeholder="Напишите что-нибудь..."></textarea>
+        <button class="btn" type="submit" name="response">Отправить</button>
+      </form>
 
       <footer>
         <div class="wrapper">
@@ -314,5 +312,10 @@
         </div>
       </footer>
     </div>
+
+
+    <script src="js/feedback.js">
+
+    </script>
   </body>
 </html>
